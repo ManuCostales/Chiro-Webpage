@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500&display=swap');
+
+* {
+    color:white !important;
+    font-family: 'Montserrat', sans-serif !important;
+    text-decoration: none !important;
+}
+
+//FONT WEIGHTS
+
+@for $i from 1 through 5 {
+    .font-w-#{$i}{
+        font-weight: 100*$i;
+    }
+}
+
+$f-w1: 100;
+$f-w2: 200;
+$f-w3: 300;
+$f-w4: 400;
+$f-w5: 500;
+
+//FONT SIZE
+
+@for $i from 1 through 5 {
+    .font-s-#{$i}{
+        font-size: 1rem*$i;
+    }
+}
+
+$f-s0: 0.5rem;
+$f-s1: 1rem;
+$f-s2: 1.5rem;
+$f-s3: 2rem;
+$f-s4: 2.5rem;
+$f-s5: 3rem;
+$f-s6: 5rem;
+$f-s7: 7rem;
+
+// Size and Weight
+
+@mixin s-w($size, $weight) {
+    font-size: $size;
+    font-weight: $weight;
+}

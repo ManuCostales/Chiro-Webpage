@@ -1,0 +1,42 @@
+
+
+.footer {
+    grid-area: footer;
+    background: $footer;
+    @include flexbox (flex, column nowrap, space-around, center);
+        .footer__a {
+            text-align: center;
+            @include anim (logoFooter, 3s, both, infinite);
+                .footer__img {
+                    width: 38%;
+                }
+        }
+    .footer__ul {
+        @include flexbox (flex, row nowrap, space-evenly, center);
+        @include m-p (0, 0);
+        width: 50%;
+    }
+    .footer__p {
+        font-size: 0.2rem;
+        text-align: center;
+        margin: 0;
+        margin-bottom: 0;
+    }
+}
+
+// -------------------------------------------LARGE-----------------------------------------
+
+@media only screen and (min-width: 1024px) and (max-width: 3000px) {
+    .footer {
+        .footer__li {
+            margin: 0 1rem;
+            .footer__a {
+                img {
+                    width: 2vw;
+                }
+            }
+        }
+    }
+}
+
+

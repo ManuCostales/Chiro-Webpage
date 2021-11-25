@@ -1,0 +1,131 @@
+// MAIN
+
+.beats__main {
+    grid-area: main;
+    display: grid;
+    background-image: url(../Imagenes/Fondo_graffitis.jpg);
+    background-size: cover;
+    grid-template-columns: 33% 34% 33%;
+    grid-template-rows: 1.4% 9% 10% 39.8% 39.8%;
+    grid-template-areas: 
+    "intro intro intro"
+    "text text text"
+    "spotify spotify spotify"
+    "cards cards cards"
+    "audioList audioList audioList";
+    grid-gap: 0px 0px;
+    overflow-x: hidden;
+}
+
+// SECTION 2 - INTRO TEXT
+
+.beatsText {
+    grid-area: text;
+    background-image: url(../Imagenes/pexels-blaz-erzetic-2426085.jpg);
+        .beatsText__p {
+            background: $title;
+            font-size: 0.8rem;
+            font-weight:$f-w2;
+            margin-top: 10%;
+            padding: 1rem;
+            width: 100%;
+            text-align: center;
+        }
+}
+
+// SECTION 3 - SPOTIFY
+
+.spotify {
+    grid-area: spotify;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+        .spotify__iframe {
+            display: block;
+            margin: 0 auto;
+            margin-top: 10%;
+            height: 90%;
+            width: 90%;
+        }
+}
+
+// SECTION 4 - CARDS
+
+.cards {
+    grid-area: cards;
+        .cards__h3 {
+            text-align: center;
+            margin: $center;
+            margin-bottom: 5%;
+            margin-top: 5%;
+        }
+        .cards__maincontainer {
+            height: 70%;
+            .cards__container {
+                background-color: rgba(1, 1, 1, 0.0);
+                border: solid white 1px;
+                border-radius: 20px;
+                    &:hover {
+                    cursor: pointer;
+                    border: solid white 3px;
+                    transform: scale(1.05);
+                        .cards__img {
+                            opacity: 1;
+                        }
+                        .cards__h5 {
+                            font-size: $f-s4;
+                        }
+                    }
+                    .cards__img {
+                        opacity: 0.5;
+                        border-radius: 20px 20px 0px 0px;
+                    }
+                    .cards__body {
+                        background: rgba(0, 0, 0, 0.8);
+                        border-bottom-left-radius: 20px;
+                        border-bottom-right-radius: 20px;
+                            .cards__h5 {
+                                font-size: 1.5rem;
+                            }
+                    }
+            }
+        }
+        
+}
+
+// SECTION 5 - AUDIOS
+
+.audioLists {
+    grid-area: audioList;
+    max-height: 100vh;
+        .audioLists__h3 {
+            font-size: $f-s3;
+        }
+        .audioLists__ul {
+                .audioLists__li {
+                    background: rgba(0, 0, 0, 0.8);
+                    border-radius: 20px;
+                    padding: 1rem;
+                        .audioLists__head {
+                            .audioLists__img {
+                                width: 10vh;
+                                height: 10vh;
+                                border-radius: 50%;
+                                border: solid white 1px;
+                                // transform:scale(0.5);
+                            }
+                        }
+                        .audioLists__body {
+                            .audioLists__audio {
+                                // margin: $center;
+                                transform: scale(0.7);
+                            }
+                            .audioLists__p {
+                                font-size: 0.7rem;
+                            }
+                        }   
+                }
+        }
+}

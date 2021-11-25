@@ -1,0 +1,61 @@
+
+// MAIN
+
+.home__main {
+    grid-area: main;
+    display: grid;
+    background-image: url(../Imagenes/Fondo_graffitis.jpg);
+    background-size: cover;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 15% 55% 15% 15%;
+    grid-template-areas: 
+    "intro intro intro"
+    "content content content"
+    "links links links"
+    "empty empty empty";
+    grid-gap: 0px 0px;
+    overflow-x: hidden;
+
+
+// 
+
+.intro {
+    grid-area: intro
+}
+
+// SECTION 2 - HOMEMAIN 
+
+.homeMain {
+    grid-area: content;
+    height: 100%;
+    background: linear-gradient(0deg, orange, rgba(135,45,253,1) 100%);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+        .homeMain__a {
+            font-size: 2rem;
+            font-weight: 200;
+        }
+        .homeMain__a--one {
+            @include anim(animlink1, 3s, ease-in, infinite);
+        }
+        .homeMain__a--two {
+            @include anim(animlink2, 3s, both, infinite);
+        }
+        .homeMain__a--three {
+            @include anim(animlink1, 3s, ease-out, infinite);
+        }
+}
+
+// SECTION 3 - LINKS 
+
+.links {
+    grid-area: links;
+}
+
+.empty {
+    grid-area: empty;
+}
+
+}

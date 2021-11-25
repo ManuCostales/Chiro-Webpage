@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+    <!-- Sitemap, sin URL´s. Agregar luego. -->
+
+  <url>
+    <loc>#(Chiro - Home</loc>
+    <lastmod>2021-06-24</lastmod>
+    <priority>1.00</priority>
+  </url>
+
+  <url>
+    <loc>#(Chiro - Beats</loc>
+    <lastmod>2021-06-24</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>#(Chiro - Produccion</loc>
+    <lastmod>2021-06-24</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>#(Chiro - Acerca de mi</loc>
+    <lastmod>2021-06-24</lastmod>
+    <priority>0.50</priority>
+  </url>
+
+  <url>
+    <loc>#(Chiro - Contacto</loc>
+    <lastmod>2021-06-24</lastmod>
+    <priority>0.60</priority>
+  </url>
+
+</urlset>

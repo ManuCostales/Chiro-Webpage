@@ -1,0 +1,14 @@
+//body GRID
+
+body {
+    height: 850vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1% 6% 89% 4%;
+    grid-template-areas: 
+    "nav nav nav"
+    "header header header"
+    "main main main"
+    "footer footer footer";
+    grid-gap: 0px 0px;
+}

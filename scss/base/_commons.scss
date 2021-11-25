@@ -1,0 +1,193 @@
+
+// Global Reset
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+// Language
+
+$lang:es;
+
+// Colors and Gradients
+
+$title: linear-gradient(rgb(17, 17, 17), black); 
+$linksbg: linear-gradient(black, rgb(39, 39, 39), black);
+$footer: linear-gradient(0deg, rgba(85,25,153,1) 0%, rgba(0,0,0,1) 58%);
+$home: linear-gradient(0deg, orange, rgba(135,45,253,1) 100%);
+
+// Margins and Padding
+
+@mixin m-p($margin, $padding) {
+    margin: $margin;
+    padding: $padding;
+}
+
+$center: 0 auto;
+
+// Margins
+
+@for $margin from 1 through 10 {
+    .margin-bt-#{$margin}{
+        margin-bottom: 10% *$margin;
+    }
+}
+
+@for $margin from 1 through 10 {
+    .margin-tp-#{$margin}{
+        margin-top: 10% *$margin;
+    }
+}
+
+@for $margin from 1 through 10 {
+    .margin-lt-#{$margin}{
+        margin-left: 10% *$margin;
+    }
+}
+
+@for $margin from 1 through 10 {
+    .margin-rt-#{$margin}{
+        margin-right: 10% *$margin;
+    }
+}
+
+// Padding 
+
+@for $padding from 1 through 10 {
+    .padding-bt-#{$padding}{
+        padding-bottom: 10% *$padding;
+    }
+}
+
+@for $padding from 1 through 10 {
+    .padding-tp-#{$padding}{
+        padding-top: 10% *$padding;
+    }
+}
+
+@for $padding from 1 through 10 {
+    .padding-lt-#{$padding}{
+        padding-left: 10% *$padding;
+    }
+}
+
+@for $padding from 1 through 10 {
+    .padding-rt-#{$padding}{
+        padding-right: 10% *$padding;
+    }
+}
+
+// Vertical Centering 
+
+@mixin vertical-center {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+// Position Fixed Controller 
+
+@mixin pfixed ($top, $right, $bottom, $left) {
+    position: fixed;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+}
+
+// Background MIXIN
+
+@mixin bg($color, $image, $repeat, $size, $position, $attachment) {
+    background-color: $color;
+    background-image: $image;
+    background-repeat: $repeat;
+    background-size: $size;
+    background-position: $position;
+    background-attachment: $attachment;
+}
+
+// Animation MIXIN:
+
+@mixin anim ($name, $duration, $fill, $iteration) {
+    animation-name: $name;
+    animation-duration: $duration;
+    animation-fill-mode: $fill;
+    animation-iteration-count: $iteration;
+}
+
+// Flexbox MIXIN 
+
+@mixin flexbox ($display, $flow, $justify, $align) {
+    display: $display;
+    flex-flow: $flow;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+
+// BOOTSTRAP modificaciones
+
+// scss-docs-start color-variables
+$black:    #000000 ;
+$indigo:  #6610f2 ;
+$purple:  #6f42c1 ;
+$white:    #ffffff ;
+$color-dropdown:     rgba(33, 37, 41, 0.7);
+$orange:  #fd7e14 ;
+$yellow:  #ffc107 ;
+$green:   #198754 ;
+$teal:    #20c997 ;
+$cyan:    #0dcaf0 ;
+// scss-docs-end color-variables
+
+// scss-docs-start colors-map
+$colors: (
+  "black":       $black,
+  "indigo":     $indigo,
+  "purple":     $purple,
+  "white":       $white,
+  "color-dropdown":        $color-dropdown,
+  "orange":     $orange,
+  "yellow":     $yellow,
+  "green":      $green,
+  "teal":       $teal,
+  "cyan":       $cyan,
+) ;
+// scss-docs-end colors-map
+
+// scss-docs-start theme-color-variables
+$primary:       $black ;
+$secondary:     $indigo ;
+$success:       $green ;
+$info:          $cyan ;
+$warning:       $yellow ;
+// scss-docs-end theme-color-variables
+
+// scss-docs-start theme-colors-map
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+) ;
+// scss-docs-end theme-colors-map
+
+$dropdown-color:                    $color-dropdown;
+$dropdown-bg:                       $color-dropdown;
+
+// scss-docs-start btn-variant-loops
+@each $color, $value in $colors {
+    .boton-#{$color} {
+        background-color: $color;
+    }   
+  }
+  
+  @each $color, $value in $colors {
+    .boton-borde-#{$color} {
+      border: 1px solid $color;
+    }
+  }
+

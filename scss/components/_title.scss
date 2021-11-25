@@ -1,0 +1,77 @@
+.intro {
+    grid-area: intro;
+    @include bg (none, none, no-repeat, cover, top center, auto);
+    // background-image: url(../Imagenes/pexels-blaz-erzetic-2426085.jpg);
+    // background-size: cover;
+    // background-position: top center;
+    .intro__title {
+        // background: $title;
+        @include bg (none, url(../Imagenes/Fondotitulodarkened.png), no-repeat, auto, center, auto);
+        .intro__h1 {
+            font-weight :$f-w5;
+            font-weight: bold;
+            font-size: 2rem;
+            text-align: center;
+            position: relative;
+            @include m-p (0, 4%);
+            @include anim (tituloHome, 6s, auto, infinite);
+            animation-timing-function: cubic-bezier(0, 3, 1, 1);
+         }
+    }
+}
+
+// -------------------SMALL
+
+@media only screen and (min-width: 360px) and (max-width: 479px) {
+    .intro {
+        .intro__title {
+            @include bg (none, url(../Imagenes/Fondotitulo.png), no-repeat, auto, left, auto);
+            .intro__h1 {
+                font-weight : bold;
+                font-size: 3rem;
+             }
+        }
+    }
+}
+
+// -------------------MEDIUM
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .intro {
+        .intro__title {
+            @include bg (none, url(../Imagenes/Fondotitulo.png), no-repeat, auto, left, auto);
+            .intro__h1 {
+                font-weight : bold;
+                font-size: 3rem;
+             }
+        }
+    }
+}
+
+// -------------------LARGE
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .intro {
+        .intro__title {
+            @include bg (none, url(../Imagenes/Fondotitulo.png), no-repeat, auto, left, auto);
+            .intro__h1 {
+                font-weight : bold;
+                font-size: 5rem;
+             }
+        }
+    }
+}
+
+// -------------------EXTRA LARGE
+
+@media only screen and (min-width: 1024px) and (max-width: 3000px) {
+    .intro {
+        .intro__title {
+            @include bg (none, url(../Imagenes/Fondotitulo.png), no-repeat, auto, center, auto);
+            .intro__h1 {
+                font-weight : bold;
+                font-size: 7rem;
+             }
+        }
+    }
+}

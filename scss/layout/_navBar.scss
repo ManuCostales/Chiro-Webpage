@@ -1,0 +1,60 @@
+
+// NAVBAR
+
+.nav {
+    grid-area: nav;
+        .nav__li {
+            @include m-p(0 1rem, 0.5rem 1rem);
+                &:hover {
+                    border:solid white 2px;
+                    border-radius: 15px;
+                }
+                .nav__a {
+                    color: white;
+                }
+                
+        }
+        .nav__img {
+            width: 125px;
+            &:hover {
+                @include anim(animLogonav, 2s, none, 1);
+            }
+        }        
+}
+
+// DROPDOWN
+
+.dropdown:hover {
+    .dropdown-menu {
+        display: block;
+        margin-top: 0;
+    }
+}
+
+.dropmenu {
+    background-color: rgba(33, 37, 41, 0.7);
+    left: 50%;
+    right: auto;
+    text-align: center;
+    top: 100%;
+    transform: translate(-50%, 0);
+    border-radius: 15px;
+        .dropmenu__a:hover {
+            background-color:  rgba(33, 37, 41, 0.0);
+            background-image: none;
+        }
+}
+
+// ---------------------------------------MEDIUM-------------------------------------------
+
+@media only screen and (max-width: 1024px) {
+    .dropdown-menu {
+            background-color: rgba(33, 37, 41, 0.7);
+            left: 0;
+            right: auto;
+            text-align: center;
+            top: 100%;
+            transform: translate(0, 0);
+            border-radius: 15px;
+        }
+    }
