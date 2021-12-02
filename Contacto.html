@@ -107,7 +107,7 @@
 </div>
     
   <!-------------------------------------------------------Main------------------------------------------------------------->
-    <main>
+    <main class="contacto__main">
         <div class="lang">
           <div class="lang__item langEN"><p class="lang__p">en</p></div>
           <div class="lang__item langES"><p class="lang__p">es</p></div>
@@ -120,14 +120,47 @@
             </div>
         </section>
         <!--section 2-->
+        <section class="form" id="consultaContacto">
+          <h2 class="form__h2">Mandame una consulta</h2>
+          <form class="form__form">
+              <div class="row g-3 m-2">
+                  <div class="form__col col">
+                    <input class="form__input" type="text" class="text-center form-control" placeholder="First name" aria-label="First name">
+                  </div>
+                  <div class="form__col col">
+                    <input class="form__input" type="text" class="text-center form-control" placeholder="Last name" aria-label="Last name">
+                  </div>
+                </div>
+                <div class="mb-3 m-2">
+                  <label for="formGroupExampleInput" class="form-label">Example label</label>
+                  <input class="form__input" type="text" class="text-center form-control" id="formGroupExampleInput" placeholder="Example input placeholder">
+                </div>
+                <div class="mb-3 m-2">
+                  <label for="formGroupExampleInput2" class="form-label">Another label</label>
+                  <input class="form__input" type="text" class="text-center form-control" id="formGroupExampleInput2" placeholder="Another input placeholder">
+                </div>
+                <div class="mb-3 m-2">
+                  <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                  <input class="form__input" type="email" class="text-center form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                </div>
+                <div class="mb-3 m-2">
+                  <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                  <textarea class="form__textarea form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <div class="col-auto">
+                  <button type="submit" class="form__btn btn boton-indigo boton-border-white">Submit</button>
+                </div>
+          </form>
+        </section>
+        <!--section 2-->
         <section class="contactoRedes" id="redesContacto">
             <h2 class="contactoRedes__title">Redes Sociales</h2>
             <ul class="contactoRedes__ul">
-                <li class="contactoRedes__li"><a class="redes__a" href="#"><img src="./Imagenes/instagram.png" rel="nofollow" alt="Instagram"></a></li>
-                <li class="contactoRedes__li"><a class="redes__a" href="#"><img src="./Imagenes/whatsapp.png" rel="nofollow" alt="Whatsapp"></a></li>
-                <li class="contactoRedes__li"><a class="redes__a" href="#"><img src="./Imagenes/twitter.png" rel="nofollow" alt="Twitter"></a></li>
-                <li class="contactoRedes__li"><a class="redes__a" href="#"><img src="./Imagenes/mail.png" rel="nofollow" alt="Email"></a></li>
-                <li class="contactoRedes__li"><a class="redes__a" href="#"><img src="./Imagenes/facebook.png" rel="nofollow" alt="Facebook"></a></li>
+                <li class="contactoRedes__li"><a class="contactoRedes__a" href="#"><img class="contactoRedes__img" src="https://icongr.am/fontawesome/instagram.svg?size=128&color=ffffff" rel="nofollow" alt="Instagram"></a></li>
+                <li class="contactoRedes__li"><a class="contactoRedes__a" href="#"><img class="contactoRedes__img" src="https://icongr.am/fontawesome/whatsapp.svg?size=128&color=ffffff" rel="nofollow" alt="Whatsapp"></a></li>
+                <li class="contactoRedes__li"><a class="contactoRedes__a" href="#"><img class="contactoRedes__img" src="https://icongr.am/fontawesome/twitter.svg?size=128&color=ffffff" rel="nofollow" alt="Twitter"></a></li>
+                <li class="contactoRedes__li"><a class="contactoRedes__a" href="#"><img class="contactoRedes__img" src="https://icongr.am/fontawesome/envelope.svg?size=128&color=ffffff" rel="nofollow" alt="Email"></a></li>
+                <li class="contactoRedes__li"><a class="contactoRedes__a" href="#"><img class="contactoRedes__img" src="https://icongr.am/fontawesome/facebook-square.svg?size=128&color=ffffff" rel="nofollow" alt="Facebook"></a></li>
             </ul>
         </section>
         <!--section 4-->
@@ -139,39 +172,7 @@
               <li class="links__li"><a class="links__a" href="#"><img class="links__img" src="./Imagenes/Logo Spotify.png" rel="nofollow" alt="Link a Spotify"></a></li>
           </ul>
         </section>
-        <!--section 5-->
-        <section class="form" id="consultaContacto">
-            <h2 class="form_h2">Mandame una consulta</h2>
-            <form class="form_form">
-                <div class="row g-3">
-                    <div class="form__col col">
-                      <input class="form_input" type="text" class="form-control" placeholder="First name" aria-label="First name">
-                    </div>
-                    <div class="form__col col">
-                      <input class="form_input" type="text" class="form-control" placeholder="Last name" aria-label="Last name">
-                    </div>
-                  </div>
-                  <div class="mb-3">
-                    <label for="formGroupExampleInput" class="form-label">Example label</label>
-                    <input class="form_input" type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder">
-                  </div>
-                  <div class="mb-3">
-                    <label for="formGroupExampleInput2" class="form-label">Another label</label>
-                    <input class="form_input" type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input placeholder">
-                  </div>
-                  <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                    <input class="form_input" type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-                  </div>
-                  <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-                    <textarea class="form__textarea form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                  </div>
-                  <div class="col-auto">
-                    <button type="submit" class="form__btn btn boton-indigo boton-border-white">Submit</button>
-                  </div>
-            </form>
-        </section>
+        <div class="empty"></div>
     </main>
    
     <!------------------------------------------------------Footer------------------------------------------------------------>

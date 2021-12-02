@@ -6,116 +6,94 @@
 
 // -------------------------------------------HOME----------------------------------------
 
-// .body {
-//     min-height: 100vh;
-//     height: 200vh;
-//     position: relative;
-//     display: grid;
-//     grid-template-columns: 1fr 1fr 1fr;
-//     grid-template-rows: 10% 40% 100% 20%;
-//     grid-template-areas: 
-//     "nav nav nav"
-//     "header header header"
-//     "main main main"
-//     "footer footer footer";
-//     grid-gap: 0px 0px;
-// }
+.home__body {
+    min-height: 100px;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 10vh 40vh minmax(10vh, max-content) 20vh;
+    grid-template-areas: 
+    "nav nav nav"
+    "header header header"
+    "homemain homemain homemain"
+    "footer footer footer";
+    grid-gap: 0px 0px;
+}
 
-// // -------------------------------------------BEATS---------------------------------------
+.beats__body {
+    @extend .home__body;
+    grid-template-areas: 
+    "nav nav nav"
+    "header header header"
+    "beatsmain beatsmain beatsmain"
+    "footer footer footer";
+}
 
-// .beats__body {
-//     @extend .home__body;
-//     grid-template-rows: 10vh 40vh 650vh 20vh;
-// }
+.produccion__body {
+    @extend .home__body;
+    grid-template-areas: 
+    "nav nav nav"
+    "header header header"
+    "prodmain prodmain prodmain"
+    "footer footer footer";
+}
 
-// // -------------------------------------------PRODUCCION----------------------------------
+.acerca__body {
+    @extend .home__body;
+    grid-template-areas: 
+    "nav nav nav"
+    "header header header"
+    "acercamain acercamain acercamain"
+    "footer footer footer";
+}
 
-// .produccion__body {
-//     @extend .home__body;
-//     grid-template-rows: 10vh 30vh 300vh 20vh;
-// }
-// // -------------------------------------------ACERCA DE MI--------------------------------
+.contacto__body {
+    @extend .home__body;
+    grid-template-areas: 
+    "nav nav nav"
+    "header header header"
+    "contactomain contactomain contactomain"
+    "footer footer footer";
+}
 
-// .acerca__body {
-//     @extend .home__body;
-//     grid-template-rows: 10vh 30vh 300vh 20vh;
-// }
+@media only screen and (min-width: 360px) and (max-width: 479px) {
+    body {
+        grid-template-rows: 10vh 40vh minmax(10vh, max-content) 20vh;
+    }
+}
 
-// // -------------------------------------------CONTACTO------------------------------------
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    body {
+        grid-template-rows: 10vh 40vh minmax(10vh, max-content) 20vh;
+    }
+}
 
-// .contacto__body {
-//     @extend .home__body;
-//     grid-template-rows: 10vh 30vh 100vh 20vh;
-// }
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    body {
+        grid-template-rows: 10vh 40vh minmax(10vh, max-content) 20vh;
+    }
+}
 
-// @media only screen and (min-width: 360px) and (max-width: 479px) {
-//     .home__body {
-//         grid-template-rows: 10vh 40vh 100vh 20vh;
-//     }
-//     .beats__body {
-//         grid-template-rows: 10vh 40vh 200vh 20vh;
-//     }
-//     .produccion__body {
-//         grid-template-rows: 10vh 40vh 200vh 20vh;
-//     }
-//     .acerca__body {
-//         grid-template-rows: 10vh 40vh 200vh 20vh;
-//     }
-//     .contacto__body {
-//         grid-template-rows: 10vh 40vh 200vh 20vh;
-//     }
-// }
+@media only screen and (min-width: 1024px) and (max-width: 1200px) {
+    #body {
+        grid-template-rows: 2vh 50vh minmax(10vh, max-content) 23vh;
+}
+}
 
-// @media only screen and (min-width: 480px) and (max-width: 767px) {
-//     .home__body {
-//         grid-template-rows: 10vh 40vh 300vh 20vh;
-//     }
-//     .beats__body {
-//         grid-template-rows: 10vh 40vh 200vh 20vh;
-//     }
-//     .produccion__body {
-//         grid-template-rows: 10vh 40vh 200vh 20vh;
-//     }
-//     .acerca__body {
-//         grid-template-rows: 10vh 40vh 200vh 20vh;
-//     }
-//     .contacto__body {
-//         grid-template-rows: 10vh 40vh 200vh 20vh;
-//     }
-// }
+@media only screen and (min-width: 1201px) and (max-width: 3000px) {
+    #body {
+        grid-template-rows: 2vh 70vh minmax(40vh, max-content) 40vh;
+}
+}
 
-// @media only screen and (min-width: 768px) and (max-width: 1024px) {
-//     .home__body {
-//         grid-template-rows: 10vh 40vh 200vh 20vh;
-//     }
-//     .beats__body {
-//         grid-template-rows: 10vh 40vh 200vh 20vh;
-//     }
-//     .produccion__body {
-//         grid-template-rows: 10vh 40vh 200vh 20vh;
-//     }
-//     .acerca__body {
-//         grid-template-rows: 10vh 40vh 200vh 20vh;
-//     }
-//     .contacto__body {
-//         grid-template-rows: 10vh 40vh 200vh 20vh;
-//     }
-// }
+@media only screen and (max-device-width : 768px) and (orientation:landscape)  {
+    #body {
+        grid-template-rows: 10vh 80vh minmax(30vh, max-content) 50vh;
+    }
+}
 
-// @media only screen and (min-width: 1024px) and (max-width: 3000px) {
-//     .home__body {
-//         grid-template-rows: 15vh 90vh 200vh 40vh;
-//     }
-//     .beats__body {
-//         grid-template-rows: 10vh 40vh 200vh 20vh;
-//     }
-//     .produccion__body {
-//         grid-template-rows: 10vh 40vh 200vh 20vh;
-//     }
-//     .acerca__body {
-//         grid-template-rows: 10vh 40vh 200vh 20vh;
-//     }
-//     .contacto__body {
-//         grid-template-rows: 10vh 40vh 200vh 20vh;
-//     }
-// }
+@media only screen and (min-device-width: 769px) and (max-device-width: 1200px) and (orientation:landscape) {
+    #body {
+        grid-template-rows: 5vh 70vh minmax(30vh, max-content) 35vh;
+    }
+}

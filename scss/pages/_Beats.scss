@@ -1,12 +1,12 @@
 // MAIN
 
 .beats__main {
-    grid-area: main;
+    grid-area: beatsmain;
     display: grid;
     background-image: url(../Imagenes/Fondo_graffitis.jpg);
     background-size: cover;
     grid-template-columns: 33% 34% 33%;
-    grid-template-rows: 1.4% 9% 10% 39.8% 39.8%;
+    grid-template-rows: 15vh minmax(30vh, max-content) minmax(30vh, max-content) minmax(30vh, max-content) minmax(30vh, max-content);
     grid-template-areas: 
     "intro intro intro"
     "text text text"
@@ -21,7 +21,9 @@
 
 .beatsText {
     grid-area: text;
-    background-image: url(../Imagenes/pexels-blaz-erzetic-2426085.jpg);
+    @include flexbox(flex, column nowrap, flex-start, center);
+    // background-image: url(../Imagenes/pexels-blaz-erzetic-2426085.jpg);
+    @include bg(none,  url(../Imagenes/pexels-blaz-erzetic-2426085.jpg), no-repeat, cover, bottom-center, auto);
         .beatsText__p {
             background: $title;
             font-size: 0.8rem;
@@ -31,13 +33,20 @@
             width: 100%;
             text-align: center;
         }
+        .beatsText__title {
+                margin: 10vh 0;
+                    .beatsText__title--h3 {
+                        margin: 0;
+                        text-shadow: 2px 2px 0px rgba(0, 0, 0, 1);
+                    }
+        }
 }
 
 // SECTION 3 - SPOTIFY
 
 .spotify {
     grid-area: spotify;
-    height: 100%;
+    height: 60vh;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -58,11 +67,11 @@
         .cards__h3 {
             text-align: center;
             margin: $center;
-            margin-bottom: 5%;
             margin-top: 5%;
         }
         .cards__maincontainer {
             height: 70%;
+            margin-bottom: 10vh;
             .cards__container {
                 background-color: rgba(1, 1, 1, 0.0);
                 border: solid white 1px;

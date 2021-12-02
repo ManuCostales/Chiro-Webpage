@@ -8,7 +8,7 @@
             text-align: center;
             @include anim (logoFooter, 3s, both, infinite);
                 .footer__img {
-                    width: 38%;
+                    width: 30%;
                 }
         }
     .footer__ul {
@@ -24,17 +24,75 @@
     }
 }
 
-// -------------------------------------------LARGE-----------------------------------------
+//----------------------------------- MEDIUM SIZE---------------------------------------
 
-@media only screen and (min-width: 1024px) and (max-width: 3000px) {
+@media only screen and (min-width: 480px) and (max-width: 768px) {
     .footer {
+        .footer__a {
+                .footer__img {
+                    width: 50%;
+                }
+        }
         .footer__li {
             margin: 0 1rem;
             .footer__a {
                 img {
-                    width: 2vw;
+                    width: 4vw;
                 }
             }
+        }
+    }
+ }
+
+// -------------------------------------------LARGE-----------------------------------------
+
+@media only screen and (min-width: 1024px) and (max-width: 1200px) {
+    .footer {
+        .footer__a {
+                .footer__img {
+                    width: 80%;
+                }
+        }
+        .footer__li {
+            margin: 0 1rem;
+            .footer__a {
+                img {
+                    width: 4vw;
+                }
+            }
+        }
+        .footer__p {
+            font-size: 0.8rem;
+            text-align: center;
+            margin: 0;
+            margin-bottom: 0;
+        }
+    }
+}
+
+@media only screen and (min-width: 1201px) and (max-width: 3000px) {
+    .footer {
+        .footer__a {
+                .footer__img {
+                    width: 100%;
+                }
+        }
+        .footer__ul {
+            width: 30%;
+            .footer__li {
+                margin: 0rem;
+                .footer__a {
+                    img {
+                        width: 2vw;
+                    }
+                }
+            }
+        }
+        .footer__p {
+            font-size: 0.8rem;
+            text-align: center;
+            margin: 0;
+            margin-bottom: 0;
         }
     }
 }

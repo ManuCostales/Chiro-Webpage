@@ -1,0 +1,230 @@
+// MAIN
+
+.produccion__main {
+    grid-area: prodmain;
+    display: grid;
+    background-image: url(../Imagenes/Fondo_graffitis.jpg);
+    background-size: cover;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 15vh minmax(30vh, max-content) minmax(30vh, max-content) minmax(30vh, max-content) minmax(30vh, max-content) minmax(30vh, max-content);
+    grid-template-areas: 
+    "intro intro intro"
+    "head head head"
+    "desc desc desc"
+    "links links links"
+    "prodspot prodspot prodspot"
+    "videos videos videos";
+    grid-gap: 0px 0px;
+    overflow-x: hidden; 
+}
+
+// SECTION 1 - INTRO
+
+.intro {
+    grid-area: intro;
+}
+
+// SECTION 2 - HEADTEXT
+
+.prodText {
+    grid-area: head;
+    @include bg (none, url(../Imagenes/produccion-2-lessPOSTA.png), no-repeat, cover, auto, auto);
+    @include flexbox (flex, row nowrap, flex-start, center);
+    height: 60vh;
+    margin-bottom: 5vh;
+        .prodText__text {
+            margin-bottom: 5vh;
+                .prodText__p {
+                    font-size: 0.7rem;
+                    text-shadow: 2px 2px 0px rgba(0, 0, 0, 1);
+                    text-align: center;
+                    margin: 0;
+                    width: 50%;
+                    align-self: center;
+                }
+        }
+        
+}
+
+// SECTION 3 - CARRUSEL
+
+.prodCarrusel {
+    grid-area: desc;
+    height: 30vh;
+    padding: 10% 0;
+        .photoSlider {
+            .photoSlider img {
+                opacity: 0.5;
+                border: white solid 4px;
+                border-radius: 25px;
+                &:hover {
+                    opacity: 1;
+                    cursor: pointer;
+                    border-radius: 25px;
+                }
+            }
+            .photoSlider h5 {
+                font-size: 1.5rem;
+                text-shadow: 2px 2px 0px rgba(0, 0, 0, 1);
+            }
+            .photoSlider p {
+                font-size: 0.7rem;
+                text-shadow: 2px 2px 0px rgba(0, 0, 0, 1);
+            }    
+        }
+}
+
+// SECTION 4 - LINKS
+
+.linksProd {
+    grid-area: links;
+        .linksProd__h2 {
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 15px;
+            width: 40%;
+            @include m-p (5% auto, 5%);
+            margin-top: 10vh;
+            font-size: 1rem;
+            display: block;
+            text-align: center;
+            border: solid white 1px;
+        }
+}
+
+// SECTION 5 - SPOTIFY
+
+.prodSpotify {
+    grid-area: prodspot;
+    height: 60vh;
+    @include flexbox (flex, row nowrap, center, center);
+        .prodSpotify__iframe {
+            height: 90%;
+            width: 90%;
+        }
+}
+
+// SECTION 6 - VIDEOS
+
+.prodVideos {
+    grid-area: videos;
+    height: 40vh;
+    width: 90%;
+    display: block;
+    margin: $center;
+    @include flexbox (flex, row nowrap, center, center);
+        .iframeYoutube {
+            display: block;
+            margin: $center;
+            padding: 0 !important;
+            height: 30vh;
+            width: 80vw;
+        }
+}
+
+//----------------------------------- SMALL SIZE---------------------------------------
+
+        @media only screen and (min-width: 360px) and (max-width: 479px) {
+
+}
+
+//----------------------------------- MEDIUM SIZE---------------------------------------
+
+        @media only screen and (min-width: 480px) and (max-width: 768px) {
+          
+       }
+
+
+
+
+//----------------------------------- LARGE SIZE---------------------------------------
+
+       @media only screen and (min-width: 768px) and (max-width:1024px) {
+            .prodText {
+                .prodText__text {
+                    height: 80%;
+                        .prodText__p {
+                            height: 90%;
+                            width: 30%;
+                            font-size: 1.1rem;
+                            margin-left: 1%;
+                        }
+                }
+                
+        }
+            .linksProd {
+                    .linksProd__h2 {
+                        margin-top: 25vh;
+                    }
+            }
+       }
+
+// ----------------------------------- EXTRA LARGE SIZE---------------------------------------
+
+       @media only screen and (min-width: 1024px) and (max-width: 1200px) {
+        .prodText {
+            .prodText__text {
+                height: 80%;
+                    .prodText__p {
+                        height: 60%;
+                        width: 50%;
+                        font-size: 1.5rem;
+                        margin-left: 3%;
+                        position: relative;
+                        top: 10%;
+                    }
+            }
+       }
+    }
+   
+// ----------------------------------- EXTRA LARGE SIZE---------------------------------------
+
+@media only screen and (min-width: 1201px) and (max-width: 4000px) {
+    .produccion__main{
+        grid-template-rows: 30vh 70vh 60vh 60vh 60vh 60vh;
+    }
+    .prodText {
+        margin: 0;
+        height: 100%;
+        background-size: all;
+        background-position: bottom right;
+            .prodText__text {
+                width: 90%;
+                .prodText__p {
+                    font-size: 1.5rem;
+                    padding: 3rem;
+                    width: 100%;
+                    background: rgba(0, 0, 0, 0.8);
+                    border: white solid 2px;
+                    border-radius: 25px;
+                }
+            }
+        }    
+    .prodCarrusel {
+            .photoSlider {
+                .photoSlider img {
+                    opacity: 0.5;
+                    border: white solid 4px;
+                    border-radius: 25px;
+                    &:hover {
+                        opacity: 1;
+                        cursor: pointer;
+                        border-radius: 25px;
+                    }
+            
+                }
+                .photoSlider h5 {
+                    font-size: 5rem;
+                }
+                .photoSlider p {
+                    font-size:2rem;
+                }
+            }
+        }
+
+    .linksProd {
+        .linksProd__h2 {
+            margin-top: 50vh;
+            margin-bottom: 20vh;
+        }
+    }
+}

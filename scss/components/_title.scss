@@ -1,13 +1,16 @@
 .intro {
     grid-area: intro;
-    @include bg (none, none, no-repeat, cover, top center, auto);
+    @include bg (none, none, no-repeat, cover, auto, auto);
     // background-image: url(../Imagenes/pexels-blaz-erzetic-2426085.jpg);
     // background-size: cover;
     // background-position: top center;
     .intro__title {
         // background: $title;
+        height: 100%;
         @include bg (none, url(../Imagenes/Fondotitulodarkened.png), no-repeat, auto, center, auto);
         .intro__h1 {
+            height: 100%;
+            @include flexbox (flex, row nowrap, center, center);
             font-weight :$f-w5;
             font-weight: bold;
             font-size: 2rem;
@@ -42,7 +45,7 @@
             @include bg (none, url(../Imagenes/Fondotitulo.png), no-repeat, auto, left, auto);
             .intro__h1 {
                 font-weight : bold;
-                font-size: 3rem;
+                font-size: 4rem;
              }
         }
     }

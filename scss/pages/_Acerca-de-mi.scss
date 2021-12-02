@@ -1,0 +1,79 @@
+.acerca__main {
+    grid-area: acercamain;
+    display: grid;
+    background-image: url(../Imagenes/Fondo_graffitis.jpg);
+    background-size: cover;
+    grid-template-columns: 33% 34% 33%;
+    grid-template-rows: 15vh minmax(30vh, max-content) minmax(30vh, max-content) 15vh;
+    grid-template-areas: 
+    "intro intro intro"
+    "acercatitle acercatitle acercatitle"
+    "acercatext acercatext acercatext"
+    "acercaempty acercaempty acercaempty";
+    grid-gap: 0px 0px;
+    overflow-x: hidden;
+}
+
+.intro {
+    grid-area: intro;
+}
+
+.acercaTitle {
+    grid-area: acercatitle;
+    margin-top: 0vh;
+    @include flexbox(flex, column nowrap, flex-start, center);
+        .acercaTitle__img {
+            width: 250%;
+        }
+        .acercaTitle__h3 {
+            background: black;
+            width: 100%;
+            text-align: center;
+            padding: 1rem;
+        }
+}
+
+.acercaText {
+    grid-area: acercatext;
+    display: grid;
+    grid-template-columns: 1fr;
+    background:rgba(0, 0, 0, 0.7);
+    border-top: solid black 5px;
+    border-bottom: double rgb(209, 209, 209) 10px;
+    grid-template-rows: minmax(5vh, max-content) minmax(5vh, max-content) minmax(5vh, max-content) minmax(5vh, max-content);
+    grid-template-areas:
+    "imageone imageone imageone"
+    "textone textone textone"
+    "texttwo texttwo texttwo"
+    "imagetwo imagetwo imagetwo";
+    grid-gap: 0;
+        .acercaText__img--one {
+            grid-area: imageone;
+            height: 160px;
+            width: 160px;
+            border: rgb(255, 255, 255) solid 2px;
+            border-radius:50%;
+            margin: 5vh auto;
+        }
+        .acercaText__img--two {
+            grid-area: imagetwo;
+            width: 100%;
+        }
+        .acercaText__p {
+            text-align: center;
+            font-size: 1rem;
+        }
+        .acercaText__p--one {
+            grid-area: textone;
+            margin: 5vh 3vw;
+        }
+        .acercaText__p--two {
+            grid-area: texttwo;
+            margin: 5vh 3vw;
+            margin-bottom: 0;
+        }
+}
+
+.empty {
+    grid-area: acercaempty;
+}
