@@ -58,3 +58,12 @@
             border-radius: 15px;
         }
     }
+
+
+
+    @media only screen and (max-device-width : 1000px) and (orientation:landscape)  {
+        .nav {
+            // height: 15vh;
+            // position: relative;
+        }
+    }
