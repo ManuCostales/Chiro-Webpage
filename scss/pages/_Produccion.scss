@@ -28,7 +28,7 @@
 
 .prodText {
     grid-area: head;
-    @include bg (none, url(../Imagenes/produccion-2-lessPOSTA.png), no-repeat, cover, auto, auto);
+    @include bg (none, url(../Imagenes/produccion-2-lessPOSTA.jpg), no-repeat, cover, auto, auto);
     @include flexbox (flex, row nowrap, flex-start, center);
     height: 60vh;
     margin-bottom: 5vh;
@@ -54,8 +54,8 @@
     padding: 10% 0;
         .photoSlider {
             .photoSlider img {
-                opacity: 0.5;
-                border: white solid 4px;
+                opacity: 1;
+                border: white solid 2px;
                 border-radius: 25px;
                 &:hover {
                     opacity: 1;
@@ -162,6 +162,31 @@
                     }
             }
 
+            .prodCarrusel {
+                grid-area: desc;
+                height: 30vh;
+                padding: 10% 0;
+                    .photoSlider {
+                        .photoSlider img {
+                            opacity: 1;
+                            border: white solid 3px;
+                            border-radius: 25px;
+                            &:hover {
+                                opacity: 1;
+                                cursor: pointer;
+                                border-radius: 25px;
+                            }
+                        }
+                        .photoSlider h5 {
+                            font-size: 2rem;
+                            text-shadow: 2px 2px 0px rgba(0, 0, 0, 1);
+                        }
+                        .photoSlider p {
+                            font-size: 1rem;
+                            text-shadow: 2px 2px 0px rgba(0, 0, 0, 1);
+                        }
+                    }    
+
             .prodVideos {
                 margin-bottom: 10vh;
                     .iframeYoutube {
@@ -169,7 +194,7 @@
                     }
             }
        }
-
+    }
 // ----------------------------------- EXTRA LARGE SIZE---------------------------------------
 
        @media only screen and (min-width: 1024px) and (max-width: 1200px) {
@@ -186,6 +211,21 @@
                     }
             }
        }
+       .prodCarrusel {
+            .photoSlider {
+                .photoSlider img {
+                    border: white solid 4px;
+                }
+                .photoSlider h5 {
+                    font-size: 2.5rem;
+                    text-shadow: 2px 2px 0px rgba(0, 0, 0, 1);
+                }
+                .photoSlider p {
+                    font-size: 1.5rem;
+                    text-shadow: 2px 2px 0px rgba(0, 0, 0, 1);
+                }
+            }    
+        }
     }
    
 // ----------------------------------- EXTRA LARGE SIZE---------------------------------------
@@ -203,6 +243,7 @@
                 width: 90%;
                 .prodText__p {
                     font-size: 1.5rem;
+                    font-weight: 400;
                     padding: 3rem;
                     width: 100%;
                     background: rgba(0, 0, 0, 0.8);
@@ -270,6 +311,7 @@
             width: 100%;
             border: solid white 2px;
         }
-}
+    }
 
-}
+    }
+
