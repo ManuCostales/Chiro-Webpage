@@ -1151,7 +1151,7 @@
 .prodText {
   grid-area: head;
   background-color: none;
-  background-image: url(../Imagenes/produccion-2-lessPOSTA.png);
+  background-image: url(../Imagenes/produccion-2-lessPOSTA.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: auto;
@@ -1177,8 +1177,8 @@
   height: 30vh;
   padding: 10% 0; }
   .prodCarrusel .photoSlider .photoSlider img {
-    opacity: 0.5;
-    border: white solid 4px;
+    opacity: 1;
+    border: white solid 2px;
     border-radius: 25px; }
     .prodCarrusel .photoSlider .photoSlider img:hover {
       opacity: 1;
@@ -1246,10 +1246,28 @@
   .linksProd .linksProd__h2 {
     margin-top: 25vh;
     border-radius: 15px; }
-  .prodVideos {
-    margin-bottom: 10vh; }
-    .prodVideos .iframeYoutube {
-      border: solid white 1px; } }
+  .prodCarrusel {
+    grid-area: desc;
+    height: 30vh;
+    padding: 10% 0; }
+    .prodCarrusel .photoSlider .photoSlider img {
+      opacity: 1;
+      border: white solid 3px;
+      border-radius: 25px; }
+      .prodCarrusel .photoSlider .photoSlider img:hover {
+        opacity: 1;
+        cursor: pointer;
+        border-radius: 25px; }
+    .prodCarrusel .photoSlider .photoSlider h5, .prodCarrusel .photoSlider .photoSlider .h5 {
+      font-size: 2rem;
+      text-shadow: 2px 2px 0px black; }
+    .prodCarrusel .photoSlider .photoSlider p {
+      font-size: 1rem;
+      text-shadow: 2px 2px 0px black; }
+    .prodCarrusel .prodVideos {
+      margin-bottom: 10vh; }
+      .prodCarrusel .prodVideos .iframeYoutube {
+        border: solid white 1px; } }
 
 @media only screen and (min-width: 1024px) and (max-width: 1200px) {
   .prodText .prodText__text {
@@ -1260,7 +1278,15 @@
       font-size: 1.5rem;
       margin-left: 3%;
       position: relative;
-      top: 10%; } }
+      top: 10%; }
+  .prodCarrusel .photoSlider .photoSlider img {
+    border: white solid 4px; }
+  .prodCarrusel .photoSlider .photoSlider h5, .prodCarrusel .photoSlider .photoSlider .h5 {
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 0px black; }
+  .prodCarrusel .photoSlider .photoSlider p {
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 0px black; } }
 
 @media only screen and (min-width: 1201px) and (max-width: 4000px) {
   .produccion__main {
@@ -1274,6 +1300,7 @@
       width: 90%; }
       .prodText .prodText__text .prodText__p {
         font-size: 1.5rem;
+        font-weight: 400;
         padding: 3rem;
         width: 100%;
         background: rgba(0, 0, 0, 0.8);
