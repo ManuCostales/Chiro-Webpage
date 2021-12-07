@@ -80,14 +80,14 @@
     grid-area: links;
         .linksProd__h2 {
             background: rgba(0, 0, 0, 0.7);
-            border-radius: 15px;
+            // border: solid white 1px;
+            // text-shadow: 2px 2px 0px rgba(0, 0, 0, 1);
+            border-radius: 10px;
             width: 40%;
-            @include m-p (5% auto, 5%);
-            margin-top: 10vh;
+            @include m-p (10vh auto, 5%);
             font-size: 1rem;
             display: block;
             text-align: center;
-            border: solid white 1px;
         }
 }
 
@@ -130,7 +130,11 @@
 //----------------------------------- MEDIUM SIZE---------------------------------------
 
         @media only screen and (min-width: 480px) and (max-width: 768px) {
-          
+            .linksProd {
+                .linksProd__h2 {
+                    margin-top: 20vh;
+                }
+            }
        }
 
 
@@ -154,6 +158,14 @@
             .linksProd {
                     .linksProd__h2 {
                         margin-top: 25vh;
+                        border-radius: 15px;
+                    }
+            }
+
+            .prodVideos {
+                margin-bottom: 10vh;
+                    .iframeYoutube {
+                        border: solid white 1px;
                     }
             }
        }
@@ -180,7 +192,7 @@
 
 @media only screen and (min-width: 1201px) and (max-width: 4000px) {
     .produccion__main{
-        grid-template-rows: 30vh 70vh 60vh 60vh 60vh 60vh;
+        grid-template-rows: 30vh 70vh minmax(30vh, max-content) minmax(30vh, max-content) minmax(30vh, max-content) minmax(30vh, max-content);
     }
     .prodText {
         margin: 0;
@@ -200,6 +212,7 @@
             }
         }    
     .prodCarrusel {
+        height: 90%;
             .photoSlider {
                 .photoSlider img {
                     opacity: 0.5;
@@ -221,10 +234,42 @@
             }
         }
 
-    .linksProd {
-        .linksProd__h2 {
-            margin-top: 50vh;
-            margin-bottom: 20vh;
+
+    .prodSpotify {
+    grid-area: prodspot;
+    height: 60vh;
+    @include flexbox (flex, row nowrap, center, center);
+        .prodSpotify__iframe {
+            height: 90%;
+            width: 90%;
         }
     }
+    .linksProd {
+        .linksProd__h2 {
+            margin-bottom: 20vh;
+            margin-top: 0vh;
+            font-size: 2rem;
+            padding: 2rem;
+            white-space: nowrap;
+            border-radius: 20px;
+            width: 30%;
+        }
+    }
+
+
+.prodVideos {
+    grid-area: videos;
+    height: 100vh;
+    width: 100%;
+    display: block;
+    margin: $center;
+    @include flexbox (flex, row nowrap, center, center);
+    margin-bottom: 20vh;
+        .iframeYoutube {
+            height: 80vh;
+            width: 100%;
+            border: solid white 2px;
+        }
+}
+
 }

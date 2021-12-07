@@ -30,6 +30,7 @@
             width: 100%;
             text-align: center;
             padding: 1rem;
+            margin-bottom: 1rem;
         }
 }
 
@@ -59,6 +60,9 @@
             grid-area: imagetwo;
             width: 100%;
         }
+        .acercaText__img--three {
+            display:none;
+        }
         .acercaText__p {
             text-align: center;
             font-size: 1rem;
@@ -76,4 +80,163 @@
 
 .empty {
     grid-area: acercaempty;
+}
+
+
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .acercaTitle {
+            .acercaTitle__img {
+                width: 150%;
+            }
+    }
+    .acercaText {
+            .acercaText__img--two {
+                width: 50%;
+                margin: $center;
+            }
+            .acercaText__p {
+                font-size: 0.8rem;
+            }
+            .acercaText__p--one {
+                margin: 3vh 3vw;
+            }
+            .acercaText__p--two {
+                margin: 3vh 3vw;
+            }
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .acercaTitle {
+        .acercaTitle__img {
+            width: 150%;
+        }
+        .acercaTitle__h3 {
+            font-size: 2rem;
+        }
+    }
+    .acercaText {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "imageone imageone"
+        "textone textone"
+        "texttwo texttwo"
+        "imagetwo imagethree";
+        .acercaText__img--one {
+            height: 200px;
+            width: 200px;
+            margin-bottom: 2vh;
+        }
+        .acercaText__img--two {
+            width: 100%;
+            
+        }
+        .acercaText__p--one {
+            margin-bottom: 2vh;
+        }
+        .acercaText__img--three {
+            display: block;
+            grid-area: imagethree;
+            width: 100%;
+            position: relative;
+            transform: scaleX(-1);
+        }
+    }
+    
+}
+
+
+
+@media only screen and (min-width: 1024px) and (max-width: 1200px) {
+    .acercaTitle {
+        .acercaTitle__img {
+            width: 150%;
+        }
+        .acercaTitle__h3 {
+            font-size: 3rem;
+            padding: 3rem;
+        }
+    }
+    .acercaText {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "imageone imageone"
+        "textone textone"
+        "texttwo texttwo"
+        "imagetwo imagethree";
+        .acercaText__img--one {
+            height: 300px;
+            width: 300px;
+            border-radius: 25px;
+            margin-bottom: 2vh;
+        }
+        .acercaText__img--two {
+            width: 100%;
+            
+        }
+        .acercaText__p--one {
+            margin-bottom: 2vh;
+        }
+        .acercaText__img--three {
+            display: block;
+            grid-area: imagethree;
+            width: 100%;
+            position: relative;
+            transform: scaleX(-1);
+        }
+    }
+    
+}
+
+
+@media only screen and (min-width: 1201px) and (max-width: 3000px) {
+    .acerca__main {
+        grid-template-rows: 30vh minmax(30vh, max-content) minmax(30vh, max-content) 15vh;
+    }
+    .acercaTitle {
+        .acercaTitle__img {
+            width: 100%;
+        }
+        .acercaTitle__h3 {
+            font-size: 3rem;
+            padding: 2rem;
+        }
+    }
+    .acercaText {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "imageone imageone"
+        "textone textone"
+        "texttwo texttwo"
+        "imagetwo imagethree";
+        .acercaText__img--one {
+            height: 400px;
+            width: 400px;
+            border-radius: 50px;
+            margin-bottom: 2vh;
+            
+        }
+        .acercaText__img--two {
+            width: 60%;
+            margin: $center;
+            
+        }
+        .acercaText__p {
+            font-size: 1.3rem;
+            margin: 5vh 8vw;
+        }
+        .acercaText__p--one {
+            margin-bottom: 2vh;
+        }
+        .acercaText__img--three {
+            display: block;
+            grid-area: imagethree;
+            width: 60%;
+            position: relative;
+            transform: scaleX(-1);
+            margin: $center;
+        }
+    }
+    
 }

@@ -23,12 +23,13 @@
     grid-area: text;
     @include flexbox(flex, column nowrap, flex-start, center);
     // background-image: url(../Imagenes/pexels-blaz-erzetic-2426085.jpg);
-    @include bg(none,  url(../Imagenes/pexels-blaz-erzetic-2426085.jpg), no-repeat, cover, bottom-center, auto);
+    @include bg(none,  url(../Imagenes/pexels-blaz-erzetic-2426085gold.jpg), no-repeat, cover, bottom-center, auto);
         .beatsText__p {
             background: $title;
             font-size: 0.8rem;
             font-weight:$f-w2;
             margin-top: 10%;
+            margin-bottom: 0;
             padding: 1rem;
             width: 100%;
             text-align: center;
@@ -67,11 +68,17 @@
         .cards__h3 {
             text-align: center;
             margin: $center;
-            margin-top: 5%;
+            background: rgba(0, 0, 0, 0.7);
+            @include m-p (5vh auto, 5%);
+            width: 50%;
+            font-size: 1.2rem;
+            border-radius: 10px;
         }
         .cards__maincontainer {
-            height: 70%;
-            margin-bottom: 10vh;
+            // margin-bottom: 10vh;
+            .cards__col {
+                margin-top: 2vh;
+            }
             .cards__container {
                 background-color: rgba(1, 1, 1, 0.0);
                 border: solid white 1px;
@@ -82,6 +89,7 @@
                     transform: scale(1.05);
                         .cards__img {
                             opacity: 1;
+                            object-fit: fill;
                         }
                         .cards__h5 {
                             font-size: $f-s4;
@@ -98,6 +106,12 @@
                             .cards__h5 {
                                 font-size: 1.5rem;
                             }
+                            .cards__p {
+                                text-overflow: ellipsis; 
+                                display: -webkit-box; 
+                                -webkit-line-clamp: 5; /* number of lines to show */ 
+                                -webkit-box-orient: vertical;
+                            }
                     }
             }
         }
@@ -110,7 +124,14 @@
     grid-area: audioList;
     max-height: 100vh;
         .audioLists__h3 {
-            font-size: $f-s3;
+            text-align: center;
+            margin: $center;
+            background: rgba(0, 0, 0, 0.7);
+            @include m-p (5vh auto, 5%);
+            margin-bottom: 5vh;
+            width: 50%;
+            font-size: 1.2rem;
+            border-radius: 10px;
         }
         .audioLists__ul {
                 .audioLists__li {
@@ -137,4 +158,94 @@
                         }   
                 }
         }
+}
+
+
+@media only screen and (min-width: 360px) and (max-width: 479px) {
+    
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+.beatsText {
+    .beatsText__p {
+        font-size: 1.2rem;
+    }
+    .beatsText__title {
+        .beatsText__title--h3 {
+            font-size: 3rem;
+        }
+    }
+} 
+
+.cards {
+    .cards__h3 {
+        font-size:1.5rem;
+        margin-top: 10vh;
+        margin-bottom: 5vh;
+    }
+}
+
+.audioLists {
+    .audioLists__h3 {
+        font-size: 1.5rem;
+    }
+}
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1200px) {
+    .beatsText {
+        .beatsText__p {
+            font-size: 1.6rem;
+        }
+        .beatsText__title {
+            .beatsText__title--h3 {
+                font-size: 4rem;
+            }
+        }
+    }  
+}
+
+@media only screen and (min-width: 1201px) and (max-width: 3000px) {
+    .beats__main {
+        grid-template-rows: 30vh minmax(30vh, max-content) minmax(30vh, max-content) minmax(30vh, max-content) minmax(30vh, max-content);
+    }
+    .beatsText {
+        .beatsText__p {
+            margin-top: 20vh;
+            font-size: 2rem;
+            padding: 5rem;
+        }
+        .beatsText__title {
+            margin: 20vh 0;
+            .beatsText__title--h3 {
+                font-size: 5rem;
+            }
+        }
+    }
+    .spotify {
+        margin-bottom: 20vh;
+            .spotify__iframe {
+            }
+    }
+    .cards {
+            .cards__h3 {
+                margin-bottom: 10vh;
+                width: 30%;
+                padding: 3rem;
+                font-size: 1.7rem;
+            }
+    }
+    .audioLists {
+        .audioLists__h3 {
+            margin-top: 10vh;
+            margin-bottom: 5vh;
+            width: 20%;
+            padding: 3rem;
+            font-size: 1.7rem;
+        }
+    }
 }

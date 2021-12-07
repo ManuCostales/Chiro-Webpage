@@ -24,9 +24,22 @@
     }
 }
 
+//----------------------------------- SMALL SIZE---------------------------------------
+
+.footer {
+    .footer__a {
+        .footer__img {
+            width: 40%;
+        }
+    }
+    .footer__p {
+        font-size: 0.3rem;
+    }
+}
+
 //----------------------------------- MEDIUM SIZE---------------------------------------
 
-@media only screen and (min-width: 480px) and (max-width: 768px) {
+@media only screen and (min-width: 480px) and (max-width: 767px) {
     .footer {
         .footer__a {
                 .footer__img {
@@ -46,6 +59,34 @@
 
 // -------------------------------------------LARGE-----------------------------------------
 
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .footer {
+        .footer__a {
+                .footer__img {
+                    width: 60%;
+                }
+        }
+        .footer__li {
+            margin: 0 1rem;
+            transition: all .1s linear;
+                &:hover {
+                    transform:scale(1.2);
+                }
+            .footer__a {
+                img {
+                    width: 3vw;
+                }
+            }
+        }
+        .footer__p {
+            font-size: 0.6rem;
+            text-align: center;
+            margin: 0;
+            margin-bottom: 0;
+        }
+    }
+}
+
 @media only screen and (min-width: 1024px) and (max-width: 1200px) {
     .footer {
         .footer__a {
@@ -55,6 +96,10 @@
         }
         .footer__li {
             margin: 0 1rem;
+            transition: all .1s linear;
+                &:hover {
+                    transform:scale(1.2);
+                }
             .footer__a {
                 img {
                     width: 4vw;
@@ -73,6 +118,11 @@
 @media only screen and (min-width: 1201px) and (max-width: 3000px) {
     .footer {
         .footer__a {
+                transition: all .1s linear;
+                &:hover {
+                    animation-name: none;
+                    transform: scale(1.2);
+                }
                 .footer__img {
                     width: 100%;
                 }
@@ -81,6 +131,10 @@
             width: 30%;
             .footer__li {
                 margin: 0rem;
+                transition: all .1s linear;
+                &:hover {
+                    transform:scale(1.2);
+                }
                 .footer__a {
                     img {
                         width: 2vw;

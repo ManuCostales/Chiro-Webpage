@@ -82,13 +82,13 @@
 
 @media only screen and (min-width: 1201px) and (max-width: 3000px) {
     #body {
-        grid-template-rows: 2vh 70vh minmax(40vh, max-content) 40vh;
+        grid-template-rows: 2vh 72vh minmax(40vh, max-content) 43vh;
 }
 }
 
 @media only screen and (max-device-width : 768px) and (orientation:landscape)  {
     #body {
-        grid-template-rows: 10vh 80vh minmax(30vh, max-content) 50vh;
+        grid-template-rows: 10vh 80vh minmax(30vh, max-content) 60vh;
     }
 }
 
