@@ -147,6 +147,9 @@
                 .homeMain__a {
                     font-size: 5rem;
                     font-weight: 200;
+                    transition: all .3s linear;
+                    &:hover {
+                    font-size: 6rem;}
                 }
                 .homeMain__a--one {
                     align-self: flex-start;

@@ -23,6 +23,9 @@
         margin: 0;
             .links__li {
                 text-align: center;
+                &:hover {
+                    @include anim(animLogonav, 2s, auto, auto);
+                }
                     .links__img {
                         width: 100%;
                         text-align: center;

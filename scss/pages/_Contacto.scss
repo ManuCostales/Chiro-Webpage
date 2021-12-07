@@ -32,14 +32,36 @@
             .form__form {
                 margin: 0 2vh;
                 text-align: center;
-                background: $home;
+                background: linear-gradient(rgb(68, 18, 206), rgba(135,45,253,1), orange);
                 padding: 2vh 0;
                 border-radius: 25px;
+                border: solid white 3px;
+                    .form__row {
+                        margin: 0 0vw;
+                    }
+                        .form__col {
+                            margin: 4vh 3vw;
+                        }
                         .form__input {
                             text-align: center;
+                            border-radius: 15px;
+                            background: rgba(0,0,0,0.5);
+                            box-shadow: 27px 24px 40px -10px rgba(0,0,0,0.28);
+                            font-size: 0.7rem;
+                            width: 90%;
                         }
                         .form__btn {
                             background: rgba(135,45,253,1);
+                            border: solid white 2px;
+                            border-radius: 25px;
+                            transition: all .5s linear;
+                            &:hover {
+                                transform: scale(1.2);
+                            }
+                        }
+                        .form__textarea {
+                            height: 20vh;
+                            background: rgba(0,0,0,0.5);
                         }
             }
 }
@@ -60,15 +82,18 @@
             @include m-p (5vh 0, 0);
             width: 100%;
             height: 70vh;
-            // background: $linksbg;
             background: linear-gradient(rgb(36, 36, 36), black);
             border-bottom: black solid 5px;
             // border-top: black solid 10px;
-            @include flexbox (flex, row wrap, space-around, center);
+            @include flexbox (flex, row wrap, space-evenly, center);
                 .contactoRedes__li {
                     text-align: center;
                     margin: 1rem;
                     width: 100px;
+                    transition: all 0.1s linear;
+                    &:hover {
+                        transform: scale(1.2);
+                    }
                         .contactoRedes__a {
                             width: 100px;
                                 .contactoRedes__img {
@@ -87,3 +112,203 @@
     grid-area: contactempty;
 }
 
+@media only screen and (min-width: 360px) and (max-width: 479px) {
+    .form {
+        margin: 10vh 0vh;
+                .form__form {
+                    margin: 0 2vh;
+                    border: solid white 1px;
+                        .form__row {
+                            margin: 5vh 3vw;
+                        }
+                        .form__col {
+                           margin: 1vh 3vw;
+                           .form__input {
+                            font-size: 0.9rem;
+                           }
+                        }
+                }
+    }
+    .contactoRedes {
+        margin: 5vh 0;
+        margin-bottom: 10vh;
+        height: 50vh;
+            .contactoRedes__ul {
+                height: 50vh;
+                @include flexbox (flex, row wrap, space-evenly, center);
+                    .contactoRedes__li {
+                        margin: 0.5rem;
+                    }
+            }
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .form {
+        margin: 10vh 0vh;
+                .form__form {
+                    margin: 0 2vh;
+                    border: solid white 1px;
+                        .form__row {
+                            margin: 5vh 3vw;
+                        }
+                        .form__col {
+                           margin: 1vh 3vw;
+                           .form__input {
+                            font-size: 1rem;
+                           }
+                        }
+                }
+    }
+    .contactoRedes {
+        margin: 5vh 0;
+        margin-bottom: 10vh;
+        height: 50vh;
+            .contactoRedes__ul {
+                height: 50vh;
+                @include flexbox (flex, row wrap, space-evenly, center);
+                    .contactoRedes__li {
+                        margin: 1.2rem;
+                        .contactoRedes__a {
+                            .contactoRedes__img {
+                                width: 90px;
+                            }
+                        }
+                    }
+
+            }
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .form {
+        font-size: 1.5rem;
+        margin-bottom: 5vh;
+        .form__row {
+            .form__input {
+                margin-left: 0vw;
+                font-size: 1.4rem;
+            }
+        }
+        .form__btn {
+            font-size: 2rem;
+        }
+    }
+    .contactoRedes {
+        margin: 5vh 0;
+        margin-bottom: 10vh;
+        height: 35vh;
+            .contactoRedes__ul {
+                background: linear-gradient(rgba(135,45,253,1),rgb(71, 15, 161));
+                border-top: solid white 4px;
+                border-bottom: solid white 4px;
+                height: 35vh;
+                @include flexbox (flex, row nowrap, space-evenly, center);
+                    .contactoRedes__li {
+                        margin: 1rem;
+                        .contactoRedes__a {
+                            .contactoRedes__img {
+                                width: 90px;
+                            }
+                        }
+                    }
+
+            }
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1200px) {
+    .form {
+        font-size: 1.5rem;
+        .form__row {
+            .form__input {
+                margin-left: 0vw;
+                font-size: 1.8rem;
+            }
+            .form__input--email {
+                width: 100%;
+            }
+        }
+    }
+
+    .contactoRedes {
+        .contactoRedes__ul {
+            background: linear-gradient(rgba(135,45,253,1),rgb(71, 15, 161));
+            border-top: solid white 4px;
+            border-bottom: solid white 4px;
+        }
+    }
+}
+
+@media only screen and (min-width: 1201px) and (max-width: 3000px) {
+    .contacto__main {
+        grid-template-rows: 30vh minmax(30vh, max-content) minmax(30vh, max-content) 35vh 30vh;
+    }
+    .form {
+        font-size: 1.5rem;
+        margin-bottom: 35vh;
+        .form__form {
+            margin: 0 10vw;
+            .form__row {
+                margin: 0 5vw;
+            }
+                .form__col {
+                    .form-label {
+                        margin-right: 0vw;
+                    }
+                }
+                .form__h2 {
+                    margin: 20vh auto;
+                    padding: 2rem;
+                }
+                .form__btn {
+                    font-size: 2rem;
+                }
+                .form__input {
+                    text-align: center;
+                    border-radius: 15px;
+                    box-shadow: 27px 24px 40px -10px rgba(0,0,0,0.28);
+                    font-size: 1.5rem;
+                }
+                .form__input--email {
+                    width: 100%;
+                }
+                .form__input--asunto {
+                    width: 100%;
+                }
+                .form-label {
+                    margin-right: 5vw;
+                }
+                .form__textarea {
+                    height: 20vh;
+                }
+        }
+        
+    }
+    .contactoRedes {
+        margin: 5vh 0;
+        margin-bottom: 20vh;
+        height: 35vh;
+            .contactoRedes__title {
+                padding: 2rem;
+            }
+            .contactoRedes__ul {
+                background: linear-gradient(rgba(135,45,253,1),rgb(71, 15, 161));
+                border-top: solid white 3px;
+                border-bottom: solid white 3px;
+                @include m-p(20vh auto, 2rem);
+                margin-top: 5vh;
+                height: 35vh;
+                @include flexbox (flex, row nowrap, space-evenly, center);
+                    .contactoRedes__li {
+                        margin: 1rem;
+                        .contactoRedes__a {
+                            .contactoRedes__img {
+                                width: 90px;
+                            }
+                        }
+                    }
+
+            }
+    }
+}

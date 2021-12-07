@@ -117,6 +117,10 @@ $center: 0 auto;
     animation-iteration-count: $iteration;
 }
 
+// Transition MIXIN:
+
+// @mixin tran ($property, $delay, $duration, $timing);
+
 // Flexbox MIXIN 
 
 @mixin flexbox ($display, $flow, $justify, $align) {
