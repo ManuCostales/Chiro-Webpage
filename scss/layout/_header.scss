@@ -44,7 +44,7 @@
           }
        }
 
-//----------------------------------- LARGE SIZE---------------------------------------
+//----------------------------------- MEDIUM-LARGE SIZE---------------------------------------
 
        @media only screen and (min-width: 768px) and (max-width:1024px) {
         .header {
@@ -57,7 +57,7 @@
         }
        }
 
-//----------------------------------- EXTRA LARGE SIZE---------------------------------------
+//----------------------------------- LARGE & EXTRA LARGE SIZE---------------------------------------
 
        @media only screen and (min-width: 1024px) and (max-width: 3000px) {
         .header {
@@ -70,6 +70,7 @@
         }
        }
 
+//----------------------------------- MEDIUM HORIZONTAL---------------------------------
 
        @media only screen and (max-device-width : 1025px) and (orientation:landscape)  {
         .header {
@@ -85,6 +86,8 @@
             }
         }
     }
+
+//----------------------------------- LARGE HORIZONTAL---------------------------------    
 
     @media only screen and (min-device-width:1024px) and (max-device-width : 1200px) and (orientation:landscape)  {
         .header {

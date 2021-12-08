@@ -527,16 +527,16 @@
     padding: 0;
     width: 50%; }
   .footer .footer__p {
-    font-size: 0.2rem;
+    font-size: 0.1rem;
     text-align: center;
     margin: 0;
     margin-bottom: 0; }
 
-.footer .footer__a .footer__img {
-  width: 40%; }
-
-.footer .footer__p {
-  font-size: 0.3rem; }
+@media only screen and (min-width: 360px) and (max-width: 479px) {
+  .footer .footer__a .footer__img {
+    width: 40%; }
+  .footer__p {
+    font-size: 0.2rem; } }
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
   .footer .footer__a .footer__img {

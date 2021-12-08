@@ -82,7 +82,7 @@
     grid-area: acercaempty;
 }
 
-
+//----------------------------------- MEDIUM SIZE---------------------------------------
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
     .acercaTitle {
@@ -106,6 +106,8 @@
             }
     }
 }
+
+// ------------------------------------MEDIUM-LARGE SIZE-------------------------------------
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
     .acercaTitle {
@@ -146,7 +148,7 @@
     
 }
 
-
+// -------------------------------------------LARGE SIZE-----------------------------------------
 
 @media only screen and (min-width: 1024px) and (max-width: 1200px) {
     .acercaTitle {
@@ -189,6 +191,7 @@
     
 }
 
+// ----------------------------------------EXTRA-LARGE SIZE-----------------------------------------
 
 @media only screen and (min-width: 1201px) and (max-width: 3000px) {
     .acerca__main {
