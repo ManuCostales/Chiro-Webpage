@@ -17,7 +17,7 @@
         width: 50%;
     }
     .footer__p {
-        font-size: 0.2rem;
+        font-size: 0.1rem;
         text-align: center;
         margin: 0;
         margin-bottom: 0;
@@ -26,14 +26,16 @@
 
 //----------------------------------- SMALL SIZE---------------------------------------
 
-.footer {
-    .footer__a {
-        .footer__img {
-            width: 40%;
+@media only screen and (min-width: 360px) and (max-width: 479px) {
+    .footer {
+        .footer__a {
+            .footer__img {
+                width: 40%;
+            }
         }
     }
     .footer__p {
-        font-size: 0.3rem;
+        font-size: 0.2rem;
     }
 }
 
@@ -57,7 +59,7 @@
     }
  }
 
-// -------------------------------------------LARGE-----------------------------------------
+// -------------------------------------------MEDIUM-LARGE SIZE-----------------------------------------
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
     .footer {
@@ -87,6 +89,9 @@
     }
 }
 
+// -------------------------------------------LARGE SIZE-----------------------------------------
+
+
 @media only screen and (min-width: 1024px) and (max-width: 1200px) {
     .footer {
         .footer__a {
@@ -114,6 +119,8 @@
         }
     }
 }
+
+// ----------------------------------------EXTRA-LARGE SIZE-----------------------------------------
 
 @media only screen and (min-width: 1201px) and (max-width: 3000px) {
     .footer {

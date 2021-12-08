@@ -160,14 +160,19 @@
         }
 }
 
+//----------------------------------- SMALL SIZE---------------------------------------
 
 @media only screen and (min-width: 360px) and (max-width: 479px) {
     
 }
 
+//----------------------------------- MEDIUM SIZE---------------------------------------
+
 @media only screen and (min-width: 480px) and (max-width: 767px) {
     
 }
+
+// ------------------------------------MEDIUM-LARGE SIZE-------------------------------------
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
 .beatsText {
@@ -196,6 +201,8 @@
 }
 }
 
+// -------------------------------------------LARGE SIZE-----------------------------------------
+
 @media only screen and (min-width: 1024px) and (max-width: 1200px) {
     .beatsText {
         .beatsText__p {
@@ -208,6 +215,8 @@
         }
     }  
 }
+
+// ----------------------------------------EXTRA-LARGE SIZE-----------------------------------------
 
 @media only screen and (min-width: 1201px) and (max-width: 3000px) {
     .beats__main {
