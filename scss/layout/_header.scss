@@ -57,17 +57,30 @@
         }
        }
 
-//----------------------------------- LARGE & EXTRA LARGE SIZE---------------------------------------
+//----------------------------------- LARGE SIZE---------------------------------------
 
-       @media only screen and (min-width: 1024px) and (max-width: 3000px) {
+       @media only screen and (min-width: 1024px) and (max-width: 1200px) {
         .header {
             .header__head {
                   .header__img {
-                      width: 500px;
+                      width: 400px;
                       margin-top: 13vh;
                   }
             }
         }
+       }
+
+//-------------------------------- EXTRA LARGE SIZE-----------------------------------
+
+       @media only screen and (min-width: 1201px) and (max-width:3000px) {
+           .header {
+               .header__head {
+                   .header__img {
+                       width: 500px;
+                       margin-top: 13vh;
+                   }
+               }
+           }
        }
 
 //----------------------------------- MEDIUM HORIZONTAL---------------------------------
