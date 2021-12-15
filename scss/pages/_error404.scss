@@ -1,0 +1,345 @@
+.error__body {
+  background-image: url(../Imagenes/Fondo_graffitis.jpg);
+}
+
+.error__main {
+    grid-area: errormain;
+    background: linear-gradient(rgb(60, 0, 139), rgba(135,45,253,0.5), rgba(255,165,0,1));
+}
+
+.errorTitle {
+    margin-top: 15vh;
+    text-align: center;
+    @include flexbox (flex, column nowrap, center, center);
+    animation: errorAnim_title 2s ease-out 0s 1 normal none;
+        .errorTitle__p {
+          margin: 0 0.2rem;
+          font-size: 2.5rem;
+          font-weight: bold;
+        }
+        .errorTitle__h1 {
+            margin: 0 0.2rem;
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+}
+
+.errorSec {
+    @include flexbox(flex, column nowrap, center, auto);
+        .errorSec__img {
+            width: 150px;
+            margin: $center;
+            animation: errorAnim_img 1s ease-out 1s 1 normal forwards;
+            opacity: 0;
+        }
+        .errorSec__ul {
+            @include flexbox(flex, column nowrap, center, center);
+            @include m-p (0,0);
+            margin-bottom: 5vh;
+                .errorSec__li {
+                    position: relative;
+                    opacity: 0;
+                      .errorSec__h2 {
+                          font-size: 2rem;
+                          font-weight: 300;
+                      }
+                }
+                .errorSec__li--one {
+                    animation: errorAnim_1 6s ease-out 2s 1 normal forwards;
+                }
+                .errorSec__li--two {
+                    animation: errorAnim_2 6s ease-out 3s 1 normal forwards;
+                }
+                .errorSec__li--three {
+                    animation: errorAnim_3 6s ease-out 4s 1 normal forwards;
+                }
+        }
+      }
+
+.errorReturn {
+  .errorReturn__text {
+    text-align: center;
+    @include flexbox (flex, column nowrap, center, center);
+    margin-bottom: 10vh;
+    opacity: 0;
+    animation: errorAnim_text 1s ease-out 5s 1 normal forwards;
+      }
+    }
+        
+
+
+  .errorMenu {
+    .errorMenu__ul {
+      @include flexbox (flex, column nowrap, center, center);
+      @include m-p(0,0);
+      text-align: center;
+      margin-bottom: 10vh;
+        .errorMenu__li {
+          @include m-p(1vh,0);
+          width: 100%;
+          // border-top: 1px solid white;
+          // border-bottom: 1px solid white;
+          background-color: rgba(0,0,0,0.3);
+          padding: 0.5rem;
+          .errorMenu__li--ul{
+            text-align: center;
+            padding: 0;
+            .errorMenu__li--a {
+              font-size:0.5rem;
+            }
+        }
+    }
+  }
+}
+
+//----------------------------------- MEDIUM SIZE---------------------------------------
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .errorTitle {
+    flex-flow: row nowrap;
+    .errorTitle__p {
+      font-size: 3rem;
+    }
+    .errorTitle__h1 {
+      font-size: 3rem;
+    }
+  }
+
+  .errorSec {
+      .errorSec__img {
+        width: 200px;
+      }
+      .errorSec__ul {
+          .errorSec__li {
+            .errorSec__h2 {
+              font-size: 2.5rem;
+            }
+          }
+      }
+  }
+
+}
+
+// ------------------------------------MEDIUM-LARGE SIZE-------------------------------------
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .errorTitle {
+    flex-flow: row nowrap;
+    margin-top: 10vh;
+    margin-bottom: 0vh;
+    .errorTitle__p {
+      font-size: 5rem;
+    }
+    .errorTitle__h1 {
+      font-size: 5rem;
+    }
+  }
+
+  .errorSec {
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10vh;
+      .errorSec__img {
+        margin: 0;
+        margin-bottom: 3vh;
+        width: 380px;
+      }
+      .errorSec__ul {
+        flex-flow: row nowrap;
+        margin: 0;
+          .errorSec__li {
+            margin: 0 0.8vw;
+            .errorSec__h2 {
+              font-size: 4rem;
+            }
+          }
+          .errorSec__li--two {
+            animation: errorAnim_2-LARGE 6s ease-out 3s 1 normal forwards;
+          }
+      }
+   }
+
+   .errorReturn {
+    .errorReturn__text {
+      margin-bottom: 10vh;
+      .errorReturn__cite {
+        font-size: 2rem;
+      }
+      .errorReturn__p {
+        font-size: 2rem;
+      }
+    }
+  }
+}
+
+.errorMenu {
+  .errorMenu__ul {
+      .errorMenu__li {
+        .errorMenu__a {
+          font-size: 2.2rem;
+        }
+        .errorMenu__li--ul{
+          .errorMenu__li--a {
+            font-size: 1.2rem;
+            font-weight: 200;
+          }
+        }
+      } 
+    }
+  }
+
+  //----------------------------------- LARGE SIZE---------------------------------------
+
+  @media only screen and (min-width: 1024px) and (max-width: 1200px) {
+    .errorTitle {
+      flex-flow: row nowrap;
+      margin-top: 8vh;
+      margin-bottom: 0vh;
+      .errorTitle__p {
+        font-size: 7rem;
+      }
+      .errorTitle__h1 {
+        font-size: 7rem;
+      }
+    }
+  
+    .errorSec {
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 10vh;
+        .errorSec__img {
+          margin: 0;
+          margin-bottom: 3vh;
+          width: 500px;
+        }
+        .errorSec__ul {
+          flex-flow: row nowrap;
+          margin: 0;
+            .errorSec__li {
+              margin: 0 0.8vw;
+              .errorSec__h2 {
+                font-size: 5rem;
+              }
+            }
+            .errorSec__li--two {
+              animation: errorAnim_2-LARGE 6s ease-out 3s 1 normal forwards;
+            }
+        }
+     }
+  
+     .errorReturn {
+      .errorReturn__text {
+        margin-bottom: 10vh;
+        .errorReturn__cite {
+          font-size: 2.5rem;
+        }
+        .errorReturn__p {
+          font-size: 2.5rem;
+        }
+      }
+    }
+  }
+  
+  .errorMenu {
+    .errorMenu__ul {
+        .errorMenu__li {
+          .errorMenu__a {
+            font-size: 2.2rem;
+          }
+          .errorMenu__li--ul{
+            .errorMenu__li--a {
+              font-size: 1.2rem;
+              font-weight: 200;
+            }
+          }
+        } 
+      }
+   }
+
+//-------------------------------- EXTRA LARGE SIZE-----------------------------------
+
+@media only screen and (min-width: 1201px) and (max-width:3000px) {
+  .errorTitle {
+      flex-flow: row nowrap;
+      justify-content: center;
+      margin-top: 12vh;
+      margin-bottom: 0vh;
+      .errorTitle__p {
+        font-size: 6rem;
+      }
+      .errorTitle__h1 {
+        font-size: 6rem;
+      }
+    }
+  
+    .errorSec {
+      flex-flow: row nowrap;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 0vh;
+      margin-right: 5vw;
+        .errorSec__img {
+          margin: 0;
+          margin-bottom: 3vh;
+          width: 500px;
+        }
+        .errorSec__ul {
+          flex-flow: row nowrap;
+          margin: 0;
+            .errorSec__li {
+              margin: 0 0.8vw;
+              .errorSec__h2 {
+                font-size: 5rem;
+              }
+            }
+            .errorSec__li--two {
+              animation: errorAnim_2-LARGE 6s ease-out 3s 1 normal forwards;
+            }
+        }
+     }
+  
+     .errorReturn {
+      .errorReturn__text {
+        margin-bottom: 10vh;
+        .errorReturn__cite {
+          font-size: 2rem;
+        }
+        .errorReturn__p {
+          font-size: 2rem;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  
+  .errorMenu {
+    .errorMenu__ul {
+        .errorMenu__li {
+          &:hover {
+            transform: scale(1.0);
+            border-top: 1px solid rgb(255, 255, 255);
+            border-bottom: 1px solid rgb(255, 255, 255);
+          }
+          .errorMenu__a {
+            font-size: 2.2rem;
+            display: inline-block;
+            &:hover {
+              transform: scale(1.4);
+              color: rgb(0, 0, 0) !important;
+            }
+          }
+          .errorMenu__li--ul{
+            .errorMenu__li--a {
+              font-size: 1.2rem;
+              font-weight: 200;
+              display:inline-block;
+              &:hover {
+                transform: scale(1.5);
+                color: rgb(0, 0, 0) !important;
+                font-weight: 400;
+              }
+            }
+          }
+        } 
+      }
+}

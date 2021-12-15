@@ -1,3 +1,4 @@
+// ----------------------------------NAVBAR--------------------------------
 
 // Animacion Logo Navbar
 
@@ -16,6 +17,8 @@
     }
 }
 
+// ----------------------------------HEADER--------------------------------
+
 // Animacion Logo Header
 
 @keyframes animLogobig {
@@ -32,31 +35,7 @@
     }
 }
 
-// Animacion Titulo Beats
-
-@keyframes tituloHome {
-    0% {
-        right: 10rem;
-        opacity: 0;
-    }
-
-    50% {
-        right: 2rem;
-        opacity: 1;
-        animation-delay: 6s;
-        
-    }
-
-    75% {
-        right: -2rem;
-        opacity: 1;
-    }
-
-    100% {
-        right: -10rem;
-        opacity: 0;
-    }
-}
+// ----------------------------------FOOTER--------------------------------
 
 // Animacion Logo Footer 
 
@@ -71,6 +50,8 @@
         transform:scale(1);
     }
 }
+
+// ----------------------------------HOME--------------------------------
 
 // Animacion HOME link 1
 
@@ -114,5 +95,241 @@
     }
     100% {
         opacity: 0;
+    }
+}
+
+// ----------------------------------BEATS--------------------------------
+
+// Animacion Titulo Beats
+
+@keyframes tituloHome {
+    0% {
+        right: 10rem;
+        opacity: 0;
+    }
+
+    50% {
+        right: 2rem;
+        opacity: 1;
+        animation-delay: 6s;
+        
+    }
+
+    75% {
+        right: -2rem;
+        opacity: 1;
+    }
+
+    100% {
+        right: -10rem;
+        opacity: 0;
+    }
+}
+
+// ----------------------------------ERROR 404--------------------------------
+
+// Animacion error Title
+
+@keyframes errorAnim_title {
+    0% {
+      animation-timing-function: ease-in;
+      opacity: 1;
+      transform: translateY(-150px);
+    }
+  
+    24% {
+      opacity: 1;
+    }
+  
+    40% {
+      animation-timing-function: ease-in;
+      transform: translateY(-24px);
+    }
+  
+    65% {
+      animation-timing-function: ease-in;
+      transform: translateY(-12px);
+    }
+  
+    82% {
+      animation-timing-function: ease-in;
+      transform: translateY(-6px);
+    }
+  
+    93% {
+      animation-timing-function: ease-in;
+      transform: translateY(-4px);
+    }
+  
+    25%,
+    55%,
+    75%,
+    87% {
+      animation-timing-function: ease-out;
+      transform: translateY(0px);
+    }
+  
+    100% {
+      animation-timing-function: ease-out;
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+
+// Animacion error Img
+
+@keyframes errorAnim_img {
+    0% {
+      opacity: 0;
+      transform: translateX(-250px) rotate(-200deg);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateX(0) rotate(0deg);
+    }
+  }
+
+// Animacion error 1
+
+@keyframes errorAnim_1{
+
+    0% {
+      opacity: 0;
+      transform: translateY(-250px);
+    }
+  
+    10% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    
+    50% {
+        transform: translateY(0); 
+        opacity: 1;   
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+// Animacion error 2
+
+@keyframes errorAnim_2 {
+    0% {
+      opacity: 0;
+      transform: translateX(-250px);
+    }
+  
+    10% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(0); 
+        opacity: 1;   
+    }
+
+    100% {
+        opacity: 1;
+    }
+  }
+
+  // Animacion error 3
+
+  @keyframes errorAnim_3 {
+    0% {
+      opacity: 0;
+      transform: translateX(250px);
+    }
+  
+    10% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(0); 
+        opacity: 1;   
+    }
+
+    100% {
+        opacity: 1;
+    }
+  }
+
+//   Animacion error text 
+
+@keyframes errorAnim_text {
+    0% {
+      animation-timing-function: ease-in;
+      opacity: 0;
+      transform: translateY(45px);
+    }
+  
+    24% {
+      opacity: 1;
+    }
+  
+    40% {
+      animation-timing-function: ease-in;
+      transform: translateY(24px);
+    }
+  
+    65% {
+      animation-timing-function: ease-in;
+      transform: translateY(12px);
+    }
+  
+    82% {
+      animation-timing-function: ease-in;
+      transform: translateY(6px);
+    }
+  
+    93% {
+      animation-timing-function: ease-in;
+      transform: translateY(4px);
+    }
+  
+    25%,
+    55%,
+    75%,
+    87% {
+      animation-timing-function: ease-out;
+      transform: translateY(0px);
+    }
+  
+    100% {
+      animation-timing-function: ease-out;
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+
+// --------------------------ANIMACIONES PARA MEDIA QUERYS-------------------
+
+  // Animacion error 2 LARGE
+
+  @keyframes errorAnim_2-LARGE{
+
+    0% {
+      opacity: 0;
+      transform: translateY(250px);
+    }
+  
+    10% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    
+    50% {
+        transform: translateY(0); 
+        opacity: 1;   
+    }
+
+    100% {
+        opacity: 1;
     }
 }
