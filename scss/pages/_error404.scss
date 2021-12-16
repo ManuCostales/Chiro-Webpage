@@ -325,7 +325,6 @@
             display: inline-block;
             &:hover {
               transform: scale(1.4);
-              color: rgb(0, 0, 0) !important;
             }
           }
           .errorMenu__li--ul{
@@ -335,11 +334,96 @@
               display:inline-block;
               &:hover {
                 transform: scale(1.5);
-                color: rgb(0, 0, 0) !important;
                 font-weight: 400;
               }
             }
           }
         } 
       }
+}
+
+// ----------------------------------------------4K SIZE----------------------------------------------
+
+@media only screen and (min-width: 3000px) and (max-width: 5000px) {
+  .errorTitle {
+    flex-flow: row nowrap;
+    justify-content: center;
+    margin-top: 12vh;
+    margin-bottom: 0vh;
+    .errorTitle__p {
+      font-size: 15rem;
+    }
+    .errorTitle__h1 {
+      font-size: 15rem;
+    }
+  }
+
+  .errorSec {
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0vh;
+    margin-right: 5vw;
+      .errorSec__img {
+        margin: 0;
+        margin-bottom: 3vh;
+        width: 800px;
+      }
+      .errorSec__ul {
+        flex-flow: row nowrap;
+        margin: 0;
+          .errorSec__li {
+            margin: 0 0.8vw;
+            .errorSec__h2 {
+              font-size: 12rem;
+            }
+          }
+          .errorSec__li--two {
+            animation: errorAnim_2-LARGE 6s ease-out 3s 1 normal forwards;
+          }
+      }
+   }
+
+   .errorReturn {
+    .errorReturn__text {
+      margin-bottom: 15vh;
+      .errorReturn__cite {
+        font-size: 6rem;
+      }
+      .errorReturn__p {
+        font-size: 6rem;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.errorMenu {
+  .errorMenu__ul {
+      .errorMenu__li {
+        &:hover {
+          transform: scale(1.0);
+          border-top: 1px solid rgb(255, 255, 255);
+          border-bottom: 1px solid rgb(255, 255, 255);
+        }
+        .errorMenu__a {
+          font-size: 6rem;
+          display: inline-block;
+          &:hover {
+            transform: scale(1.4);
+          }
+        }
+        .errorMenu__li--ul{
+          .errorMenu__li--a {
+            font-size: 3rem;
+            font-weight: 200;
+            display:inline-block;
+            &:hover {
+              transform: scale(1.5);
+              font-weight: 400;
+            }
+          }
+        }
+      } 
+    }
 }

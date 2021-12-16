@@ -83,6 +83,19 @@
            }
        }
 
+// ----------------------------------------------4K SIZE----------------------------------------------
+
+    @media only screen and (min-width: 3000px) and (max-width: 5000px) {
+        .header {
+            .header__head {
+                .header__img {
+                    width: 700px;
+                    margin-top: 5vh;
+                }
+            }
+        }
+    }
+
 //----------------------------------- MEDIUM HORIZONTAL---------------------------------
 
        @media only screen and (max-device-width : 1025px) and (orientation:landscape)  {

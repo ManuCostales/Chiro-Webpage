@@ -59,6 +59,28 @@
         }
     }
 
+// ----------------------------------------------4K SIZE----------------------------------------------
+
+@media only screen and (min-width: 3000px) and (max-width: 5000px) {
+    .nav {
+        height: 10vh;
+        .nav__li {
+            .nav__a {
+                font-size: 2rem;
+            }
+        }
+        .nav__img {
+            width: 300px;
+        }
+    }
+    
+    .dropmenu {
+        .dropmenu__a {
+            font-size: 2rem;
+            padding: 2rem;
+        }
+    }
+}
 
 
     @media only screen and (max-device-width : 1000px) and (orientation:landscape)  {

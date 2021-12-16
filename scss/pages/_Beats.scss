@@ -104,13 +104,10 @@
                         border-bottom-left-radius: 20px;
                         border-bottom-right-radius: 20px;
                             .cards__h5 {
-                                font-size: 1.5rem;
+                                font-size: 3.5rem;
                             }
                             .cards__p {
-                                text-overflow: ellipsis; 
-                                display: -webkit-box; 
-                                -webkit-line-clamp: 5; /* number of lines to show */ 
-                                -webkit-box-orient: vertical;
+                                font-size: 1.5rem;
                             }
                     }
             }
@@ -254,5 +251,68 @@
             padding: 3rem;
             font-size: 1.7rem;
         }
+    }
+}
+
+// ----------------------------------------------4K SIZE----------------------------------------------
+
+@media only screen and (min-width: 3000px) and (max-width: 5000px) {
+    .beats__main {    
+        grid-template-rows: 25vh minmax(30vh, max-content) minmax(30vh, max-content) minmax(30vh, max-content) minmax(30vh, max-content);
+    }
+    .beatsText {
+        .beatsText__p {
+            margin-top: 20vh;
+            font-size: 6rem;
+            padding: 5rem;
+        }
+        .beatsText__title {
+            margin: 20vh 0;
+            .beatsText__title--h3 {
+                font-size: 10rem;
+            }
+        }
+    }
+    .spotify {
+        margin-bottom: 20vh;
+    }
+    .cards {
+        margin-top: 0vh;
+        .cards__h3 {
+            margin-bottom: 10vh;
+            width: 30%;
+            padding: 3rem;
+            font-size: 2.5rem;
+        }
+    }
+
+    .audioLists {
+        .audioLists__h3 {
+            margin-top: 10vh;
+            margin-bottom: 5vh;
+            width: 20%;
+            padding: 3rem;
+            font-size: 2.5rem;
+        }
+        .audioLists__ul {
+            .audioLists__li {
+                    .audioLists__head {
+                        .audioLists__h5 {
+                            font-size: 3rem;
+                        }
+                    }
+                    .audioLists__body {
+                        .audioLists__audio {
+                            transform: scale(1.5);
+                            margin: 5vh 0;
+                            position: relative;
+                            bottom: 1vh;
+                        }
+                        .audioLists__p {
+                            font-size: 1.5rem;
+                        }
+                    }   
+            }
+    }
     }
 }

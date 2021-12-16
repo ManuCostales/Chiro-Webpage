@@ -322,3 +322,82 @@
             }
     }
 }
+
+// ----------------------------------------------4K SIZE----------------------------------------------
+
+@media only screen and (min-width: 3000px) and (max-width: 5000px) {
+    .contacto__main {    
+        grid-template-rows: 30vh minmax(30vh, max-content) minmax(30vh, max-content) 35vh 30vh;
+    }
+    .form {
+        font-size: 3rem;
+        margin-bottom: 10vh;
+        .form__h2 {
+            margin: 10vh auto;
+            padding: 2rem;
+            font-size: 4rem;
+        }
+        .form__form {
+            margin: 0 10vw;
+            .form__row {
+                margin: 0 5vw;
+            }
+                .form__col {
+                    .form-label {
+                        margin-right: 0vw;
+                    }
+                    .form__btn {
+                        font-size: 4rem;
+                    }
+                }
+                .form__btn {
+                    font-size: 2rem;
+                }
+                .form__input {
+                    text-align: center;
+                    border-radius: 15px;
+                    box-shadow: 27px 24px 40px -10px rgba(0,0,0,0.28);
+                    font-size: 3rem;
+                }
+                .form__input--email {
+                    width: 100%;
+                }
+                .form__input--asunto {
+                    width: 100%;
+                }
+                .form-label {
+                    margin-right: 5vw;
+                }
+                .form__textarea {
+                    height: 20vh;
+                }
+        }
+    }
+    .contactoRedes {
+        margin: 5vh 0;
+        margin-bottom: 5vh;
+        height: 35vh;
+            .contactoRedes__title {
+                padding: 2rem;
+                font-size: 4rem;
+            }
+            .contactoRedes__ul {
+                background: linear-gradient(rgba(135,45,253,1),rgb(71, 15, 161));
+                border-top: solid white 3px;
+                border-bottom: solid white 3px;
+                @include m-p(20vh auto, 2rem);
+                margin-top: 5vh;
+                height: 35vh;
+                @include flexbox (flex, row nowrap, space-evenly, center);
+                    .contactoRedes__li {
+                        margin: 1rem;
+                        .contactoRedes__a {
+                            .contactoRedes__img {
+                                width: 250px;
+                            }
+                        }
+                    }
+
+            }
+    }
+}

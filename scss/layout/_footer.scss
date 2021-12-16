@@ -158,4 +158,41 @@
     }
 }
 
+// ---------------------------------------------4K SIZE----------------------------------------------
+
+@media only screen and (min-width: 3001px) and (max-width: 5000px) {
+    .footer {
+        .footer__a {
+                transition: all .1s linear;
+                &:hover {
+                    animation-name: none;
+                    transform: scale(1.2);
+                }
+                .footer__img {
+                    width: 300px;
+                }
+        }
+        .footer__ul {
+            width: 30%;
+            .footer__li {
+                margin: 0rem;
+                transition: all .1s linear;
+                &:hover {
+                    transform:scale(1.2);
+                }
+                .footer__a {
+                    img {
+                        width: 2vw;
+                    }
+                }
+            }
+        }
+        .footer__p {
+            font-size: 1.5rem;
+            text-align: center;
+            margin: 0;
+            margin-bottom: 0;
+        }
+    }
+}
 

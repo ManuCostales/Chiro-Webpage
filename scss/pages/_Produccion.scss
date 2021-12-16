@@ -315,3 +315,71 @@
 
     }
 
+// ----------------------------------------------4K SIZE----------------------------------------------
+
+@media only screen and (min-width: 3000px) and (max-width: 5000px) {
+    .produccion__main {    
+        grid-template-rows: 25vh 70vh minmax(30vh, max-content) minmax(30vh, max-content) minmax(30vh, max-content) minmax(30vh, max-content);
+    }
+    .prodText {
+            .prodText__text {
+                .prodText__p {
+                    font-size: 3rem;
+                }
+            }
+        }    
+    .prodCarrusel {
+        height: 60vh;
+        padding-bottom: 0;
+                .photoSlider h5 {
+                    font-size: 6rem;
+                }
+                .photoSlider p {
+                    font-size:3rem;
+                }
+            }
+
+
+    .prodSpotify {
+    grid-area: prodspot;
+    height: 60vh;
+    @include flexbox (flex, row nowrap, center, center);
+        .prodSpotify__iframe {
+            height: 90%;
+            width: 90%;
+        }
+    }
+    .linksProd {
+        .linksProd__h2 {
+            margin-bottom: 5vh;
+            margin-top: 5vh;
+            font-size: 4rem;
+        }
+    }
+
+
+.prodVideos {
+    grid-area: videos;
+    height: 100vh;
+    width: 90vw;
+    display: block;
+    margin: $center;
+    @include flexbox (flex, row nowrap, center, center);
+    margin-bottom: 20vh;
+        .prodVideos__inner {
+            width: 90vw;
+            position: relative;
+            right: 28vw;
+            .prodVideos__active {
+                width: 90vw;
+                .iframeYoutube {
+                    height: 80vh;
+                    width: 90vw;
+                    border: solid white 2px;
+                }
+            }
+        }
+       
+    }
+}
+

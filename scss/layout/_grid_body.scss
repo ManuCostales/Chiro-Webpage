@@ -108,6 +108,17 @@
         }       
 }
 
+// ----------------------------------------------4K SIZE----------------------------------------------
+
+@media only screen and (min-width: 3000px) and (max-width: 5000px) {
+    #body {
+        grid-template-rows: 10vh 40vh minmax(40vh, max-content) 30vh;
+    }
+    .error__body {
+        grid-template-rows: 2vh minmax(10vh, max-content) 30vh;
+        }     
+}
+
 // ------------------------------MEDIUM HORIZONTAL------------------------------
 
 @media only screen and (max-device-width : 768px) and (orientation:landscape)  {

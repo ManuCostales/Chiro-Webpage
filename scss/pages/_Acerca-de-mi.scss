@@ -243,3 +243,55 @@
     }
     
 }
+
+// ----------------------------------------------4K SIZE----------------------------------------------
+
+@media only screen and (min-width: 3000px) and (max-width: 5000px) {
+    .acerca__main {    
+        grid-template-rows: 25vh minmax(30vh, max-content) minmax(30vh, max-content) 15vh;
+    }
+    .acercaTitle {
+        .acercaTitle__img {
+            width: 100%;
+        }
+        .acercaTitle__h3 {
+            font-size: 5rem;
+            padding: 2rem;
+        }
+    }
+    .acercaText {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "imageone imageone"
+        "textone textone"
+        "texttwo texttwo"
+        "imagetwo imagethree";
+        .acercaText__img--one {
+            height: 700px;
+            width: 700px;
+            border-radius: 50px;
+            margin-bottom: 2vh;
+            
+        }
+        .acercaText__img--two {
+            width: 60%;
+            margin: $center;
+            
+        }
+        .acercaText__p {
+            font-size: 2.5rem;
+            margin: 5vh 8vw;
+        }
+        .acercaText__p--one {
+            margin-bottom: 2vh;
+        }
+        .acercaText__img--three {
+            display: block;
+            grid-area: imagethree;
+            width: 60%;
+            position: relative;
+            transform: scaleX(-1);
+            margin: $center;
+        }
+    }
+}

@@ -173,3 +173,31 @@
         }
     }
 }
+
+// ----------------------------------------------4K SIZE----------------------------------------------
+
+@media only screen and (min-width: 3000px) and (max-width: 5000px) {
+    .home__main {    
+        grid-template-rows: 25vh 100vh 30vh 30vh;
+        .homeMain {
+            .homeMain__a {
+                font-size: 12rem;
+                font-weight: 200;
+                transition: all .3s linear;
+                &:hover {
+                font-size: 15rem;}
+            }
+            .homeMain__a--one {
+                align-self: flex-start;
+                margin-left: 6vw;
+            }
+            .homeMain__a--two {
+                align-self: center;
+            }
+            .homeMain__a--three {
+                align-self: flex-end;
+                margin-right: 6vw;
+            }
+    }
+    }
+}
