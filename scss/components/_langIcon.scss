@@ -1,5 +1,4 @@
 
-
 .lang {
     position: fixed;
     left: 94.8%;
@@ -12,11 +11,11 @@
         height:40px;
         left: 70%;
         text-align: center;
-            .lang__p{
-                margin: $center;
-                padding: 20%;
-                font-weight: $f-w5;
-            }
+        .lang__p{
+            margin: $center;
+            padding: 20%;
+            font-weight: $f-w5;
+        }
     }
 }
 

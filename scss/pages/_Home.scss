@@ -19,20 +19,20 @@
 
 // 
 
-.intro {
-    grid-area: intro;
-}
+    .intro {
+        grid-area: intro;
+    }
 
 // SECTION 2 - HOMEMAIN 
 
-.homeMain {
-    grid-area: content;
-    height: 100%;
-    background: linear-gradient(0deg, orange, rgba(135,45,253,1) 100%);
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-around;
-    align-items: center;
+    .homeMain {
+        grid-area: content;
+        height: 100%;
+        background: linear-gradient(0deg, orange, rgba(135,45,253,1) 100%);
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-around;
+        align-items: center;
         .homeMain__a {
             font-size: 1.5rem;
             font-weight: 200;
@@ -46,17 +46,17 @@
         .homeMain__a--three {
             @include anim(animlink3, 3s, ease-out, infinite);
         }
-}
+    }
 
 // SECTION 3 - LINKS 
 
-.links {
-    grid-area: links;
-}
+    .links {
+        grid-area: links;
+    }
 
-.empty {
-    grid-area: empty;
-}
+    .empty {
+        grid-area: empty;
+    }
 
 }
 
@@ -64,21 +64,20 @@
 
 @media only screen and (min-width: 360px) and (max-width: 479px) {
     .home__main {
-            .homeMain {
-                .homeMain__a {
-                    font-size: 2rem;
-                    font-weight: 200;
-                }
+        .homeMain {
+            .homeMain__a {
+                font-size: 2rem;
+                font-weight: 200;
+            }
         }
-    }
-    
+    } 
 }
 
 //----------------------------------- MEDIUM SIZE---------------------------------------
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-.home__main {    
-    .homeMain {
+    .home__main {    
+        .homeMain {
             .homeMain__a {
                 font-size: 2.2rem;
                 font-weight: 200;
@@ -94,8 +93,8 @@
                 align-self: flex-end;
                 margin-right: 4vw;
             }
+        }
     }
-}
 }
 
 // ------------------------------------MEDIUM-LARGE SIZE-------------------------------------
@@ -103,21 +102,21 @@
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
     .home__main {    
         .homeMain {
-                .homeMain__a {
-                    font-size: 2.5rem;
-                    font-weight: 200;
-                }
-                .homeMain__a--one {
-                    align-self: flex-start;
-                    margin-left: 5vw;
-                }
-                .homeMain__a--two {
-                    align-self: center;
-                }
-                .homeMain__a--three {
-                    align-self: flex-end;
-                    margin-right: 5vw;
-                }
+            .homeMain__a {
+                font-size: 2.5rem;
+                font-weight: 200;
+            }
+            .homeMain__a--one {
+                align-self: flex-start;
+                margin-left: 5vw;
+            }
+            .homeMain__a--two {
+                align-self: center;
+            }
+            .homeMain__a--three {
+                align-self: flex-end;
+                margin-right: 5vw;
+            }
         }
     }
 }
@@ -127,21 +126,21 @@
 @media only screen and (min-width: 1024px) and (max-width: 1200px) {
     .home__main {    
         .homeMain {
-                .homeMain__a {
-                    font-size: 4rem;
-                    font-weight: 200;
-                }
-                .homeMain__a--one {
-                    align-self: flex-start;
-                    margin-left: 7vw;
-                }
-                .homeMain__a--two {
-                    align-self: center;
-                }
-                .homeMain__a--three {
-                    align-self: flex-end;
-                    margin-right: 6vw;
-                }
+            .homeMain__a {
+                font-size: 4rem;
+                font-weight: 200;
+            }
+            .homeMain__a--one {
+                align-self: flex-start;
+                margin-left: 7vw;
+            }
+            .homeMain__a--two {
+                align-self: center;
+            }
+            .homeMain__a--three {
+                align-self: flex-end;
+                margin-right: 6vw;
+            }
         }
     }
 }
@@ -152,24 +151,24 @@
     .home__main {    
         grid-template-rows: 30vh 100vh 30vh 40vh;
         .homeMain {
-                .homeMain__a {
-                    font-size: 5rem;
-                    font-weight: 200;
-                    transition: all .3s linear;
-                    &:hover {
-                    font-size: 6rem;}
-                }
-                .homeMain__a--one {
-                    align-self: flex-start;
-                    margin-left: 6vw;
-                }
-                .homeMain__a--two {
-                    align-self: center;
-                }
-                .homeMain__a--three {
-                    align-self: flex-end;
-                    margin-right: 6vw;
-                }
+            .homeMain__a {
+                font-size: 5rem;
+                font-weight: 200;
+                transition: all .3s linear;
+                &:hover {
+                font-size: 6rem;}
+            }
+            .homeMain__a--one {
+                align-self: flex-start;
+                margin-left: 6vw;
+            }
+            .homeMain__a--two {
+                align-self: center;
+            }
+            .homeMain__a--three {
+                align-self: flex-end;
+                margin-right: 6vw;
+            }
         }
     }
 }
@@ -198,6 +197,12 @@
                 align-self: flex-end;
                 margin-right: 6vw;
             }
+        }
     }
-    }
+}
+
+// ------------------------------MEDIUM HORIZONTAL------------------------------
+
+@media only screen and (max-device-width : 768px) and (orientation:landscape) {
+    
 }

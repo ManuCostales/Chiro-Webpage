@@ -1,11 +1,9 @@
 @import "../scss/base/commons";
 @import "../scss/base/fonts";
 @import "../scss/layout/_grid_body";
-// @import "../scss/layout/grid_main";
 @import "../scss/layout/navBar";
 @import "../scss/layout/header";
 @import "../scss/layout/footer";
-// @import "_content";
 @import "../scss/components/animations";
 @import "../scss/components/links";
 @import "../scss/components/langIcon";
@@ -17,8 +15,4 @@
 @import "../scss/pages/Acerca-de-mi";
 @import "../scss/pages/Contacto";
 @import "../scss/pages/error404";
-// @import "_mediaQueries-sm";
-// @import "_mediaQueries-md";
-// @import "_mediaQueries-lg";
-// @import "_mediaQueries-xl";
 @import "../node_modules/bootstrap/scss/bootstrap.scss"

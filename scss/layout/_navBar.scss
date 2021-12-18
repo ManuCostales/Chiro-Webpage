@@ -3,23 +3,22 @@
 
 .nav {
     grid-area: nav;
-        .nav__li {
-            @include m-p(0 1rem, 0.5rem 1rem);
-                &:hover {
-                    border:solid white 2px;
-                    border-radius: 15px;
-                }
-                .nav__a {
-                    color: white;
-                }
-                
+    .nav__li {
+        @include m-p(0 1rem, 0.5rem 1rem);
+        &:hover {
+            border:solid white 2px;
+            border-radius: 15px;
         }
-        .nav__img {
-            width: 125px;
-            &:hover {
-                @include anim(animLogonav, 2s, none, 1);
-            }
-        }        
+        .nav__a {
+            color: white;
+        }     
+    }
+    .nav__img {
+        width: 125px;
+        &:hover {
+            @include anim(animLogonav, 2s, none, 1);
+        }
+    }        
 }
 
 // DROPDOWN
@@ -39,25 +38,25 @@
     top: 100%;
     transform: translate(-50%, 0);
     border-radius: 15px;
-        .dropmenu__a:hover {
-            background-color:  rgba(33, 37, 41, 0.0);
-            background-image: none;
-        }
+    .dropmenu__a:hover {
+        background-color:  rgba(33, 37, 41, 0.0);
+        background-image: none;
+    }
 }
 
 // ---------------------------------------MEDIUM SIZE-------------------------------------------
 
 @media only screen and (max-width: 1024px) {
     .dropdown-menu {
-            background-color: rgba(33, 37, 41, 0.7);
-            left: 0;
-            right: auto;
-            text-align: center;
-            top: 100%;
-            transform: translate(0, 0);
-            border-radius: 15px;
-        }
+        background-color: rgba(33, 37, 41, 0.7);
+        left: 0;
+        right: auto;
+        text-align: center;
+        top: 100%;
+        transform: translate(0, 0);
+        border-radius: 15px;
     }
+}
 
 // ----------------------------------------------4K SIZE----------------------------------------------
 
@@ -82,10 +81,12 @@
     }
 }
 
+// ------------------------------MEDIUM HORIZONTAL------------------------------
+
+@media only screen and (max-device-width : 768px) and (orientation:landscape) {
+    
+}
 
     @media only screen and (max-device-width : 1000px) and (orientation:landscape)  {
-        .nav {
-            // height: 15vh;
-            // position: relative;
-        }
+        
     }

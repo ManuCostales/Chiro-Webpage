@@ -32,17 +32,17 @@
     @include flexbox (flex, row nowrap, flex-start, center);
     height: 60vh;
     margin-bottom: 5vh;
-        .prodText__text {
-            margin-bottom: 5vh;
-                .prodText__p {
-                    font-size: 0.7rem;
-                    text-shadow: 2px 2px 0px rgba(0, 0, 0, 1);
-                    text-align: center;
-                    margin: 0;
-                    width: 50%;
-                    align-self: center;
-                }
+    .prodText__text {
+        margin-bottom: 5vh;
+        .prodText__p {
+            font-size: 0.7rem;
+            text-shadow: 2px 2px 0px rgba(0, 0, 0, 1);
+            text-align: center;
+            margin: 0;
+            width: 50%;
+            align-self: center;
         }
+    }
         
 }
 
@@ -52,43 +52,41 @@
     grid-area: desc;
     height: 30vh;
     padding: 10% 0;
-        .photoSlider {
-            .photoSlider img {
+    .photoSlider {
+        .photoSlider img {
+            opacity: 1;
+            border: white solid 2px;
+            border-radius: 25px;
+            &:hover {
                 opacity: 1;
-                border: white solid 2px;
+                cursor: pointer;
                 border-radius: 25px;
-                &:hover {
-                    opacity: 1;
-                    cursor: pointer;
-                    border-radius: 25px;
-                }
             }
-            .photoSlider h5 {
-                font-size: 1.5rem;
-                text-shadow: 2px 2px 0px rgba(0, 0, 0, 1);
-            }
-            .photoSlider p {
-                font-size: 0.7rem;
-                text-shadow: 2px 2px 0px rgba(0, 0, 0, 1);
-            }    
         }
+        .photoSlider h5 {
+            font-size: 1.5rem;
+            text-shadow: 2px 2px 0px rgba(0, 0, 0, 1);
+        }
+        .photoSlider p {
+            font-size: 0.7rem;
+            text-shadow: 2px 2px 0px rgba(0, 0, 0, 1);
+        }    
+    }
 }
 
 // SECTION 4 - LINKS
 
 .linksProd {
     grid-area: links;
-        .linksProd__h2 {
-            background: rgba(0, 0, 0, 0.7);
-            // border: solid white 1px;
-            // text-shadow: 2px 2px 0px rgba(0, 0, 0, 1);
-            border-radius: 10px;
-            width: 40%;
-            @include m-p (10vh auto, 5%);
-            font-size: 1rem;
-            display: block;
-            text-align: center;
-        }
+    .linksProd__h2 {
+        background: rgba(0, 0, 0, 0.7);
+        border-radius: 10px;
+        width: 40%;
+        @include m-p (10vh auto, 5%);
+        font-size: 1rem;
+        display: block;
+        text-align: center;
+    }
 }
 
 // SECTION 5 - SPOTIFY
@@ -97,10 +95,10 @@
     grid-area: prodspot;
     height: 60vh;
     @include flexbox (flex, row nowrap, center, center);
-        .prodSpotify__iframe {
-            height: 90%;
-            width: 90%;
-        }
+    .prodSpotify__iframe {
+        height: 90%;
+        width: 90%;
+    }
 }
 
 // SECTION 6 - VIDEOS
@@ -112,13 +110,13 @@
     display: block;
     margin: $center;
     @include flexbox (flex, row nowrap, center, center);
-        .iframeYoutube {
-            display: block;
-            margin: $center;
-            padding: 0 !important;
-            height: 30vh;
-            width: 80vw;
-        }
+    .iframeYoutube {
+        display: block;
+        margin: $center;
+        padding: 0 !important;
+        height: 30vh;
+        width: 80vw;
+    }
 }
 
 //----------------------------------- SMALL SIZE---------------------------------------
@@ -129,88 +127,102 @@
 
 //----------------------------------- MEDIUM SIZE---------------------------------------
 
-        @media only screen and (min-width: 480px) and (max-width: 768px) {
-            .linksProd {
-                .linksProd__h2 {
-                    margin-top: 20vh;
-                }
+    @media only screen and (min-width: 480px) and (max-width: 768px) {
+
+        .linksProd {
+            .linksProd__h2 {
+                margin-top: 20vh;
             }
-       }
-
-
-
+        }
+    }
 
 // ------------------------------------MEDIUM-LARGE SIZE-------------------------------------
 
-       @media only screen and (min-width: 768px) and (max-width:1024px) {
-            .prodText {
-                .prodText__text {
-                    height: 80%;
-                        .prodText__p {
-                            height: 90%;
-                            width: 30%;
-                            font-size: 1.1rem;
-                            margin-left: 1%;
-                        }
-                }
-                
-        }
-            .linksProd {
-                    .linksProd__h2 {
-                        margin-top: 25vh;
-                        border-radius: 15px;
-                    }
-            }
+    @media only screen and (min-width: 768px) and (max-width:1024px) {
 
-            .prodCarrusel {
-                grid-area: desc;
-                height: 30vh;
-                padding: 10% 0;
-                    .photoSlider {
-                        .photoSlider img {
-                            opacity: 1;
-                            border: white solid 3px;
-                            border-radius: 25px;
-                            &:hover {
-                                opacity: 1;
-                                cursor: pointer;
-                                border-radius: 25px;
-                            }
-                        }
-                        .photoSlider h5 {
-                            font-size: 2rem;
-                            text-shadow: 2px 2px 0px rgba(0, 0, 0, 1);
-                        }
-                        .photoSlider p {
-                            font-size: 1rem;
-                            text-shadow: 2px 2px 0px rgba(0, 0, 0, 1);
-                        }
-                    }    
-
-            .prodVideos {
-                margin-bottom: 10vh;
-                    .iframeYoutube {
-                        border: solid white 1px;
-                    }
-            }
-       }
-    }
-// -------------------------------------------LARGE SIZE-----------------------------------------
-
-       @media only screen and (min-width: 1024px) and (max-width: 1200px) {
         .prodText {
             .prodText__text {
                 height: 80%;
-                    .prodText__p {
-                        height: 60%;
-                        width: 50%;
-                        font-size: 1.5rem;
-                        margin-left: 3%;
-                        position: relative;
-                        top: 10%;
+                .prodText__p {
+                    height: 90%;
+                    width: 30%;
+                    font-size: 1.1rem;
+                    margin-left: 1%;
+                }
+            }
+        }
+
+        .linksProd {
+            .linksProd__h2 {
+                margin-top: 25vh;
+                border-radius: 15px;
+            }
+        }
+
+        .prodCarrusel {
+            grid-area: desc;
+            height: 30vh;
+            padding: 10% 0;
+            .photoSlider {
+                .photoSlider img {
+                    opacity: 1;
+                    border: white solid 3px;
+                    border-radius: 25px;
+                    &:hover {
+                        opacity: 1;
+                        cursor: pointer;
+                        border-radius: 25px;
                     }
+                }
+                .photoSlider h5 {
+                    font-size: 2rem;
+                    text-shadow: 2px 2px 0px rgba(0, 0, 0, 1);
+                }
+                .photoSlider p {
+                    font-size: 1rem;
+                    text-shadow: 2px 2px 0px rgba(0, 0, 0, 1);
+                }
+            }
+        }    
+
+        .prodVideos {
+            margin-bottom: 10vh;
+            .prodVideos__div {
+                .prodVideos__inner {
+                    width: 90vw;
+                    position: relative;
+                    right: 28vw;
+                    .prodVideos__active {
+                        width: 90vw;
+                        .iframeYoutube {
+                            height: 80vh;
+                            width: 90vw;
+                            border: solid white 2px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+// -------------------------------------------LARGE SIZE-----------------------------------------
+
+       @media only screen and (min-width: 1024px) and (max-width: 1200px) {
+
+        .prodText {
+            .prodText__text {
+                height: 80%;
+                .prodText__p {
+                    height: 60%;
+                    width: 50%;
+                    font-size: 1.5rem;
+                    margin-left: 3%;
+                    position: relative;
+                    top: 10%;
+                }
             }
        }
+
        .prodCarrusel {
             .photoSlider {
                 .photoSlider img {
@@ -234,6 +246,7 @@
     .produccion__main{
         grid-template-rows: 30vh 70vh minmax(30vh, max-content) minmax(30vh, max-content) minmax(30vh, max-content) minmax(30vh, max-content);
     }
+
     .prodText {
         margin: 0;
         height: 100%;
@@ -251,7 +264,8 @@
                     border-radius: 25px;
                 }
             }
-        }    
+        } 
+
     .prodCarrusel {
         height: 90%;
             .photoSlider {
@@ -277,14 +291,15 @@
 
 
     .prodSpotify {
-    grid-area: prodspot;
-    height: 60vh;
-    @include flexbox (flex, row nowrap, center, center);
+        grid-area: prodspot;
+        height: 60vh;
+        @include flexbox (flex, row nowrap, center, center);
         .prodSpotify__iframe {
             height: 90%;
             width: 90%;
         }
     }
+
     .linksProd {
         .linksProd__h2 {
             margin-bottom: 20vh;
@@ -298,57 +313,59 @@
     }
 
 
-.prodVideos {
-    grid-area: videos;
-    height: 100vh;
-    width: 100%;
-    display: block;
-    margin: $center;
-    @include flexbox (flex, row nowrap, center, center);
-    margin-bottom: 20vh;
+    .prodVideos {
+        grid-area: videos;
+        height: 100vh;
+        width: 100%;
+        display: block;
+        margin: $center;
+        @include flexbox (flex, row nowrap, center, center);
+        margin-bottom: 20vh;
         .iframeYoutube {
             height: 80vh;
             width: 100%;
             border: solid white 2px;
         }
     }
-
-    }
+}
 
 // ----------------------------------------------4K SIZE----------------------------------------------
 
 @media only screen and (min-width: 3000px) and (max-width: 5000px) {
+
     .produccion__main {    
         grid-template-rows: 25vh 70vh minmax(30vh, max-content) minmax(30vh, max-content) minmax(30vh, max-content) minmax(30vh, max-content);
     }
+
     .prodText {
-            .prodText__text {
-                .prodText__p {
-                    font-size: 3rem;
-                }
+        .prodText__text {
+            .prodText__p {
+                font-size: 3rem;
             }
-        }    
+        }
+    }
+
     .prodCarrusel {
         height: 60vh;
         padding-bottom: 0;
-                .photoSlider h5 {
-                    font-size: 6rem;
-                }
-                .photoSlider p {
-                    font-size:3rem;
-                }
-            }
-
+        .photoSlider h5 {
+            font-size: 6rem;
+        }
+        .photoSlider p {
+            font-size:3rem;
+        }
+    }
 
     .prodSpotify {
-    grid-area: prodspot;
-    height: 60vh;
-    @include flexbox (flex, row nowrap, center, center);
+        grid-area: prodspot;
+        height: 60vh;
+        @include flexbox (flex, row nowrap, center, center);
         .prodSpotify__iframe {
             height: 90%;
             width: 90%;
         }
     }
+    
     .linksProd {
         .linksProd__h2 {
             margin-bottom: 5vh;
@@ -358,28 +375,29 @@
     }
 
 
-.prodVideos {
-    grid-area: videos;
-    height: 100vh;
-    width: 90vw;
-    display: block;
-    margin: $center;
-    @include flexbox (flex, row nowrap, center, center);
-    margin-bottom: 20vh;
-        .prodVideos__inner {
-            width: 90vw;
-            position: relative;
-            right: 28vw;
-            .prodVideos__active {
+    .prodVideos {
+        grid-area: videos;
+        height: 100vh;
+        width: 90vw;
+        display: block;
+        margin: $center;
+        @include flexbox (flex, row nowrap, center, center);
+        margin-bottom: 20vh;
+        .prodVideos__div {
+            .prodVideos__inner {
                 width: 90vw;
-                .iframeYoutube {
-                    height: 80vh;
+                position: relative;
+                right: 28vw;
+                .prodVideos__active {
                     width: 90vw;
-                    border: solid white 2px;
+                    .iframeYoutube {
+                        height: 80vh;
+                        width: 90vw;
+                        border: solid white 2px;
+                    }
                 }
             }
         }
-       
     }
 }
 
