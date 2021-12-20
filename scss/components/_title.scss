@@ -1,11 +1,7 @@
 .intro {
     grid-area: intro;
     @include bg (none, none, no-repeat, cover, auto, auto);
-    // background-image: url(../Imagenes/pexels-blaz-erzetic-2426085.jpg);
-    // background-size: cover;
-    // background-position: top center;
     .intro__title {
-        // background: $title;
         height: 100%;
         @include bg (none, url(../Imagenes/Fondotitulodarkened.png), no-repeat, auto, center, auto);
         .intro__h1 {
@@ -19,7 +15,7 @@
             @include m-p (0, 4%);
             @include anim (tituloHome, 6s, auto, infinite);
             animation-timing-function: cubic-bezier(0, 3, 1, 1);
-         }
+        }
     }
 }
 
@@ -32,7 +28,7 @@
             .intro__h1 {
                 font-weight : bold;
                 font-size: 3rem;
-             }
+            }
         }
     }
 }
@@ -46,7 +42,7 @@
             .intro__h1 {
                 font-weight : bold;
                 font-size: 4rem;
-             }
+            }
         }
     }
 }
@@ -60,7 +56,7 @@
             .intro__h1 {
                 font-weight : bold;
                 font-size: 5rem;
-             }
+            }
         }
     }
 }
@@ -74,7 +70,21 @@
             .intro__h1 {
                 font-weight : bold;
                 font-size: 7rem;
-             }
+            }
+        }
+    }
+}
+
+// -------------------------4K SIZE
+
+@media only screen and (min-width: 3000px) and (max-width: 5000px) {
+    .intro {
+        .intro__title {
+            @include bg (none, url(../Imagenes/Fondotitulo.png), no-repeat, cover, center, auto);
+            .intro__h1 {
+                font-size: 15rem;
+                @include m-p (0, 0);
+            }
         }
     }
 }

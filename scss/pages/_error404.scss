@@ -5,89 +5,90 @@
 .error__main {
     grid-area: errormain;
     background: linear-gradient(rgb(60, 0, 139), rgba(135,45,253,0.5), rgba(255,165,0,1));
+    overflow-x: hidden;
 }
 
 .errorTitle {
-    margin-top: 15vh;
-    text-align: center;
-    @include flexbox (flex, column nowrap, center, center);
-    animation: errorAnim_title 2s ease-out 0s 1 normal none;
-        .errorTitle__p {
-          margin: 0 0.2rem;
-          font-size: 2.5rem;
-          font-weight: bold;
-        }
-        .errorTitle__h1 {
-            margin: 0 0.2rem;
-            font-size: 2.5rem;
-            font-weight: bold;
-        }
+  margin-top: 15vh;
+  text-align: center;
+  @include flexbox (flex, column nowrap, center, center);
+  animation: errorAnim_title 2s ease-out 0s 1 normal none;
+  .errorTitle__p {
+    margin: 0 0.2rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  .errorTitle__h1 {
+      margin: 0 0.2rem;
+      font-size: 2.5rem;
+      font-weight: bold;
+  }
 }
 
 .errorSec {
-    @include flexbox(flex, column nowrap, center, auto);
-        .errorSec__img {
-            width: 150px;
-            margin: $center;
-            animation: errorAnim_img 1s ease-out 1s 1 normal forwards;
-            opacity: 0;
-        }
-        .errorSec__ul {
-            @include flexbox(flex, column nowrap, center, center);
-            @include m-p (0,0);
-            margin-bottom: 5vh;
-                .errorSec__li {
-                    position: relative;
-                    opacity: 0;
-                      .errorSec__h2 {
-                          font-size: 2rem;
-                          font-weight: 300;
-                      }
-                }
-                .errorSec__li--one {
-                    animation: errorAnim_1 6s ease-out 2s 1 normal forwards;
-                }
-                .errorSec__li--two {
-                    animation: errorAnim_2 6s ease-out 3s 1 normal forwards;
-                }
-                .errorSec__li--three {
-                    animation: errorAnim_3 6s ease-out 4s 1 normal forwards;
-                }
-        }
-      }
+  @include flexbox(flex, column nowrap, center, auto);
+  .errorSec__img {
+      width: 150px;
+      margin: $center;
+      animation: errorAnim_img 1s ease-out 1s 1 normal forwards;
+      opacity: 0;
+  }
+  .errorSec__ul {
+    @include flexbox(flex, column nowrap, center, center);
+    @include m-p (0,0);
+    margin-bottom: 5vh;
+    .errorSec__li {
+        position: relative;
+        opacity: 0;
+          .errorSec__h2 {
+              font-size: 2rem;
+              font-weight: 300;
+          }
+    }
+    .errorSec__li--one {
+        animation: errorAnim_1 6s ease-out 2s 1 normal forwards;
+    }
+    .errorSec__li--two {
+        animation: errorAnim_2 6s ease-out 3s 1 normal forwards;
+    }
+    .errorSec__li--three {
+        animation: errorAnim_3 6s ease-out 4s 1 normal forwards;
+    }
+  }
+}
 
 .errorReturn {
   .errorReturn__text {
-    text-align: center;
-    @include flexbox (flex, column nowrap, center, center);
-    margin-bottom: 10vh;
-    opacity: 0;
-    animation: errorAnim_text 1s ease-out 5s 1 normal forwards;
-      }
-    }
+  text-align: center;
+  @include flexbox (flex, column nowrap, center, center);
+  margin-bottom: 10vh;
+  opacity: 0;
+  animation: errorAnim_text 1s ease-out 5s 1 normal forwards;
+  }
+}
         
-
-
-  .errorMenu {
-    .errorMenu__ul {
-      @include flexbox (flex, column nowrap, center, center);
-      @include m-p(0,0);
-      text-align: center;
-      margin-bottom: 10vh;
-        .errorMenu__li {
-          @include m-p(1vh,0);
-          width: 100%;
-          // border-top: 1px solid white;
-          // border-bottom: 1px solid white;
-          background-color: rgba(0,0,0,0.3);
-          padding: 0.5rem;
-          .errorMenu__li--ul{
-            text-align: center;
-            padding: 0;
-            .errorMenu__li--a {
-              font-size:0.5rem;
-            }
+.errorMenu {
+  .errorMenu__ul {
+    @include flexbox (flex, column nowrap, center, center);
+    @include m-p(0,0);
+    text-align: center;
+    margin-bottom: 10vh;
+    .errorMenu__li {
+      @include m-p(1vh,0);
+      width: 100vw;
+      background-color: rgba(0,0,0,0.3);
+      padding: 0.5rem;
+      .errorMenu__a {
+        font-size: 1.3rem;
+      }
+      .errorMenu__li--ul{
+        text-align: center;
+        padding: 0;
+        .errorMenu__li--a {
+          font-size:0.7rem;
+          font-weight: 200;
         }
+      }
     }
   }
 }
@@ -106,18 +107,17 @@
   }
 
   .errorSec {
-      .errorSec__img {
-        width: 200px;
+    .errorSec__img {
+      width: 200px;
+    }
+    .errorSec__ul {
+      .errorSec__li {
+        .errorSec__h2 {
+          font-size: 2.5rem;
+        }
       }
-      .errorSec__ul {
-          .errorSec__li {
-            .errorSec__h2 {
-              font-size: 2.5rem;
-            }
-          }
-      }
+    }
   }
-
 }
 
 // ------------------------------------MEDIUM-LARGE SIZE-------------------------------------
@@ -139,27 +139,27 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 10vh;
-      .errorSec__img {
-        margin: 0;
-        margin-bottom: 3vh;
-        width: 380px;
+    .errorSec__img {
+      margin: 0;
+      margin-bottom: 3vh;
+      width: 380px;
+    }
+    .errorSec__ul {
+      flex-flow: row nowrap;
+      margin: 0;
+      .errorSec__li {
+        margin: 0 0.8vw;
+        .errorSec__h2 {
+          font-size: 4rem;
+        }
       }
-      .errorSec__ul {
-        flex-flow: row nowrap;
-        margin: 0;
-          .errorSec__li {
-            margin: 0 0.8vw;
-            .errorSec__h2 {
-              font-size: 4rem;
-            }
-          }
-          .errorSec__li--two {
-            animation: errorAnim_2-LARGE 6s ease-out 3s 1 normal forwards;
-          }
+      .errorSec__li--two {
+        animation: errorAnim_2-LARGE 6s ease-out 3s 1 normal forwards;
       }
-   }
+    }
+  }
 
-   .errorReturn {
+  .errorReturn {
     .errorReturn__text {
       margin-bottom: 10vh;
       .errorReturn__cite {
@@ -170,23 +170,23 @@
       }
     }
   }
-}
 
-.errorMenu {
-  .errorMenu__ul {
+  .errorMenu {
+    .errorMenu__ul {
       .errorMenu__li {
         .errorMenu__a {
-          font-size: 2.2rem;
+          font-size: 2.3rem;
         }
         .errorMenu__li--ul{
           .errorMenu__li--a {
-            font-size: 1.2rem;
+            font-size: 1.3rem;
             font-weight: 200;
           }
         }
       } 
     }
   }
+}
 
   //----------------------------------- LARGE SIZE---------------------------------------
 
@@ -207,25 +207,25 @@
       justify-content: center;
       align-items: center;
       margin-bottom: 10vh;
-        .errorSec__img {
-          margin: 0;
-          margin-bottom: 3vh;
-          width: 500px;
+      .errorSec__img {
+        margin: 0;
+        margin-bottom: 3vh;
+        width: 500px;
+      }
+      .errorSec__ul {
+        flex-flow: row nowrap;
+        margin: 0;
+        .errorSec__li {
+          margin: 0 0.8vw;
+          .errorSec__h2 {
+            font-size: 5rem;
+          }
         }
-        .errorSec__ul {
-          flex-flow: row nowrap;
-          margin: 0;
-            .errorSec__li {
-              margin: 0 0.8vw;
-              .errorSec__h2 {
-                font-size: 5rem;
-              }
-            }
-            .errorSec__li--two {
-              animation: errorAnim_2-LARGE 6s ease-out 3s 1 normal forwards;
-            }
+        .errorSec__li--two {
+          animation: errorAnim_2-LARGE 6s ease-out 3s 1 normal forwards;
         }
-     }
+      }
+    }
   
      .errorReturn {
       .errorReturn__text {
@@ -238,108 +238,197 @@
         }
       }
     }
-  }
   
   .errorMenu {
     .errorMenu__ul {
-        .errorMenu__li {
-          .errorMenu__a {
-            font-size: 2.2rem;
+      .errorMenu__li {
+        .errorMenu__a {
+          font-size: 2.5rem;
+        }
+        .errorMenu__li--ul{
+          .errorMenu__li--a {
+            font-size: 1.5rem;
+            font-weight: 200;
           }
-          .errorMenu__li--ul{
-            .errorMenu__li--a {
-              font-size: 1.2rem;
-              font-weight: 200;
-            }
-          }
-        } 
-      }
-   }
+        }
+      } 
+    }
+  }
+}
 
 //-------------------------------- EXTRA LARGE SIZE-----------------------------------
 
 @media only screen and (min-width: 1201px) and (max-width:3000px) {
   .errorTitle {
-      flex-flow: row nowrap;
-      justify-content: center;
-      margin-top: 12vh;
-      margin-bottom: 0vh;
-      .errorTitle__p {
-        font-size: 6rem;
-      }
-      .errorTitle__h1 {
-        font-size: 6rem;
-      }
+    flex-flow: row nowrap;
+    justify-content: center;
+    margin-top: 12vh;
+    margin-bottom: 0vh;
+    .errorTitle__p {
+      font-size: 6rem;
     }
+    .errorTitle__h1 {
+      font-size: 6rem;
+    }
+  }
   
-    .errorSec {
+  .errorSec {
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0vh;
+    margin-right: 5vw;
+    .errorSec__img {
+      margin: 0;
+      margin-bottom: 3vh;
+      width: 500px;
+    }
+    .errorSec__ul {
       flex-flow: row nowrap;
-      justify-content: center;
-      align-items: center;
-      margin-bottom: 0vh;
-      margin-right: 5vw;
-        .errorSec__img {
-          margin: 0;
-          margin-bottom: 3vh;
-          width: 500px;
+      margin: 0;
+      .errorSec__li {
+        margin: 0 0.8vw;
+        .errorSec__h2 {
+          font-size: 5rem;
         }
-        .errorSec__ul {
-          flex-flow: row nowrap;
-          margin: 0;
-            .errorSec__li {
-              margin: 0 0.8vw;
-              .errorSec__h2 {
-                font-size: 5rem;
-              }
-            }
-            .errorSec__li--two {
-              animation: errorAnim_2-LARGE 6s ease-out 3s 1 normal forwards;
-            }
-        }
-     }
-  
-     .errorReturn {
-      .errorReturn__text {
-        margin-bottom: 10vh;
-        .errorReturn__cite {
-          font-size: 2rem;
-        }
-        .errorReturn__p {
-          font-size: 2rem;
-          margin-bottom: 0;
-        }
+      }
+      .errorSec__li--two {
+        animation: errorAnim_2-LARGE 6s ease-out 3s 1 normal forwards;
       }
     }
   }
   
+  .errorReturn {
+    .errorReturn__text {
+      margin-bottom: 10vh;
+      .errorReturn__cite {
+        font-size: 2rem;
+      }
+      .errorReturn__p {
+        font-size: 2rem;
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  
   .errorMenu {
     .errorMenu__ul {
-        .errorMenu__li {
+      .errorMenu__li {
+        &:hover {
+          transform: scale(1.0);
+          border-top: 1px solid rgb(255, 255, 255);
+          border-bottom: 1px solid rgb(255, 255, 255);
+        }
+        .errorMenu__a {
+          font-size: 2.2rem;
+          display: inline-block;
+          transition: all 0.1s linear;
           &:hover {
-            transform: scale(1.0);
-            border-top: 1px solid rgb(255, 255, 255);
-            border-bottom: 1px solid rgb(255, 255, 255);
+            transform: scale(1.4);
           }
-          .errorMenu__a {
-            font-size: 2.2rem;
-            display: inline-block;
+        }
+        .errorMenu__li--ul{
+          .errorMenu__li--a {
+            font-size: 1.2rem;
+            font-weight: 200;
+            display:inline-block;
+            transition: all 0.1s linear;
             &:hover {
-              transform: scale(1.4);
-              color: rgb(0, 0, 0) !important;
+              transform: scale(1.5);
+              font-weight: 400;
             }
           }
-          .errorMenu__li--ul{
-            .errorMenu__li--a {
-              font-size: 1.2rem;
-              font-weight: 200;
-              display:inline-block;
-              &:hover {
-                transform: scale(1.5);
-                color: rgb(0, 0, 0) !important;
-                font-weight: 400;
-              }
-            }
-          }
-        } 
+        }
+      } 
+    }
+  }
+}
+
+// ----------------------------------------------4K SIZE----------------------------------------------
+
+@media only screen and (min-width: 3000px) and (max-width: 5000px) {
+  .errorTitle {
+    flex-flow: row nowrap;
+    justify-content: center;
+    margin-top: 12vh;
+    margin-bottom: 0vh;
+    .errorTitle__p {
+      font-size: 15rem;
+    }
+    .errorTitle__h1 {
+      font-size: 15rem;
+    }
+  }
+
+  .errorSec {
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0vh;
+    margin-right: 5vw;
+    .errorSec__img {
+      margin: 0;
+      margin-bottom: 3vh;
+      width: 800px;
+    }
+    .errorSec__ul {
+      flex-flow: row nowrap;
+      margin: 0;
+      .errorSec__li {
+        margin: 0 0.8vw;
+        .errorSec__h2 {
+          font-size: 12rem;
+        }
       }
+      .errorSec__li--two {
+        animation: errorAnim_2-LARGE 6s ease-out 3s 1 normal forwards;
+      }
+    }
+  }
+
+  .errorReturn {
+    .errorReturn__text {
+      margin-bottom: 15vh;
+      .errorReturn__cite {
+        font-size: 6rem;
+      }
+      .errorReturn__p {
+        font-size: 6rem;
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .errorMenu {
+    .errorMenu__ul {
+      .errorMenu__li {
+        &:hover {
+          transform: scale(1.0);
+          border-top: 4px solid rgb(255, 255, 255);
+          border-bottom: 4px solid rgb(255, 255, 255);
+        }
+        .errorMenu__a {
+          font-size: 6rem;
+          display: inline-block;
+          transition: all 0.1s linear;
+          &:hover {
+            transform: scale(1.4);
+          }
+        }
+        .errorMenu__li--ul{
+          .errorMenu__li--a {
+            font-size: 3rem;
+            font-weight: 200;
+            display:inline-block;
+            transition: all 0.1s linear;
+            &:hover {
+              transform: scale(1.5);
+              font-weight: 400;
+            }
+          }
+        }
+      } 
+    }
+  }
 }

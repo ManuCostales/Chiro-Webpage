@@ -1,8 +1,3 @@
-//body GRID
-
-// html {
-//     height: auto !important;
-// }
 
 // -------------------------------------------HOME----------------------------------------
 
@@ -94,7 +89,7 @@
 @media only screen and (min-width: 1024px) and (max-width: 1200px) {
     #body {
         grid-template-rows: 2vh 50vh minmax(10vh, max-content) 23vh;
-}
+    }
 }
 
 // ----------------------------------------EXTRA-LARGE SIZE-----------------------------------------
@@ -102,17 +97,32 @@
 @media only screen and (min-width: 1201px) and (max-width: 3000px) {
     #body {
         grid-template-rows: 2vh 72vh minmax(40vh, max-content) 43vh;
-        }
+    }
     .error__body {
         grid-template-rows: 2vh minmax(10vh, max-content) 43vh;
-        }       
+    }       
 }
+
+// ----------------------------------------------4K SIZE----------------------------------------------
+
+@media only screen and (min-width: 3000px) and (max-width: 5000px) {
+    #body {
+        grid-template-rows: 10vh 40vh minmax(40vh, max-content) 30vh;
+    }
+    .error__body {
+        grid-template-rows: 2vh minmax(10vh, max-content) 30vh;
+    }     
+}
+
+// ------------------------------SMALL HORIZONTAL-------------------------------
+
+
 
 // ------------------------------MEDIUM HORIZONTAL------------------------------
 
 @media only screen and (max-device-width : 768px) and (orientation:landscape)  {
     #body {
-        grid-template-rows: 10vh 80vh minmax(30vh, max-content) 60vh;
+        grid-template-rows: 5vh 85vh minmax(30vh, max-content) 60vh;
     }
 }
 

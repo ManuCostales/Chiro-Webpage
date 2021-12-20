@@ -21,16 +21,16 @@
         align-items: center;
         padding: 0;
         margin: 0;
-            .links__li {
-                text-align: center;
-                &:hover {
-                    @include anim(animLogonav, 2s, auto, auto);
-                }
-                    .links__img {
-                        width: 100%;
-                        text-align: center;
-                    }
+        .links__li {
+            text-align: center;
+            &:hover {
+                @include anim(animLogonav, 2s, auto, auto);
             }
+            .links__img {
+                width: 100%;
+                text-align: center;
+            }
+        }
     }
 }
 
@@ -67,6 +67,23 @@
     .links__img {
         width: 300px;
         text-align: center;
+    }
+}
+
+// -----------------------------4K SIZE
+
+@media only screen and (min-width: 3001px) and (max-width: 5000px) {
+    .links {
+        width: 100%;
+        .links__ul {
+            width: 100%;
+            .links__li {
+                .links__img {
+                    width: 700px;
+                    text-align: center;
+                }
+            }
+        }
     }
 }
 
