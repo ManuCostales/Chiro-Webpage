@@ -114,9 +114,7 @@
     }     
 }
 
-// ------------------------------SMALL HORIZONTAL-------------------------------
-
-
+// ------------------------------------------------------------------------------------HORIZONTAL/LANDSCAPE MODE----------------------------------------------------------------
 
 // ------------------------------MEDIUM HORIZONTAL------------------------------
 
@@ -124,12 +122,35 @@
     #body {
         grid-template-rows: 5vh 85vh minmax(30vh, max-content) 60vh;
     }
+    .error__body {
+        grid-template-rows: 2vh minmax(10vh, max-content) 60vh;
+    }    
+}
+
+// ---------------------------------- MEDIUM+ HORIZONTAL-------------------------------
+
+@media only screen and (min-device-width: 812px) and (max-device-width : 1023px) and (orientation:landscape)  {
+    #body {
+        grid-template-rows: 5vh 85vh minmax(30vh, max-content) 50vh;
+    }
+    .error__body {
+        grid-template-rows: 2vh minmax(10vh, max-content) 60vh;
+    }  
 }
 
 // ------------------------------LARGE HORIZONTAL------------------------------
 
-@media only screen and (min-device-width: 769px) and (max-device-width: 1200px) and (orientation:landscape) {
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1200px) and (orientation:landscape) {
     #body {
-        grid-template-rows: 5vh 70vh minmax(30vh, max-content) 35vh;
+        grid-template-rows: 5vh 70vh minmax(30vh, max-content) 50vh;
+    }
+    .error__body {
+        grid-template-rows: 2vh minmax(10vh, max-content) 40vh;
+    }  
+}
+
+@media only screen and (min-device-width: 1201px) and (max-device-width: 3000px) and (orientation:landscape) {
+    #body {
+        grid-template-rows: 5vh 70vh minmax(30vh, max-content) 40vh;
     }
 }

@@ -299,3 +299,29 @@
         }
     }
 }
+
+// ------------------------------MEDIUM HORIZONTAL------------------------------
+
+@media only screen and (max-device-width : 768px) and (orientation:landscape)  {
+    .acerca__main {
+        grid-template-rows: 30vh minmax(30vh, max-content) minmax(30vh, max-content) 15vh;
+    }
+}
+
+// ---------------------------------- MEDIUM+ HORIZONTAL-------------------------------
+
+@media only screen and (min-device-width: 812px) and (max-device-width : 1023px) and (orientation:landscape)  {
+    .acerca__main {
+        grid-template-rows: 30vh minmax(30vh, max-content) minmax(30vh, max-content) 15vh;
+    }
+}
+
+// ------------------------------LARGE HORIZONTAL------------------------------
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1200px) and (orientation:landscape) {
+    .acerca__main {
+        grid-template-rows: 30vh minmax(30vh, max-content) minmax(30vh, max-content) 15vh;
+    }
+}
+
+

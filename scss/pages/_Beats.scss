@@ -102,10 +102,10 @@
                 border-bottom-left-radius: 20px;
                 border-bottom-right-radius: 20px;
                 .cards__h5 {
-                    font-size: 3.5rem;
+                    font-size: 1.6rem;
                 }
                 .cards__p {
-                    font-size: 1.5rem;
+                    font-size: 0.8rem;
                 }
             }
         }
@@ -315,6 +315,96 @@
                     }
                 }   
             }
+        }
+    }
+}
+
+// ------------------------------MEDIUM HORIZONTAL------------------------------
+
+@media only screen and (max-device-width : 768px) and (orientation:landscape)  {
+    .beats__main {
+        grid-template-rows: 30vh minmax(30vh, max-content) minmax(30vh, max-content) minmax(30vh, max-content) minmax(30vh, max-content);
+    }
+    .beatsText {
+        .beatsText__p {
+            margin-top: 20vh;
+            font-size: 1rem;
+            padding: 1rem;
+        }
+        .beatsText__title {
+            margin: 20vh 0;
+            .beatsText__title--h3 {
+                font-size: 3rem;
+            }
+        }
+    }
+
+    .spotify {
+        margin-bottom: 20vh;
+    }
+
+    .cards {
+        margin-top: 0vh;
+        .cards__h3 {
+            margin-bottom: 10vh;
+            width: 30%;
+            padding: 1rem;
+            font-size: 1.5rem;
+        }
+    }
+
+    .audioLists {
+        .audioLists__h3 {
+            margin-top: 10vh;
+            margin-bottom: 5vh;
+            width: 40%;
+            padding: 1rem;
+            font-size: 1.5rem;
+        }
+    }
+}
+
+// ------------------------------LARGE HORIZONTAL------------------------------
+
+@media only screen and (min-device-width: 769px) and (max-device-width: 1200px) and (orientation:landscape) {
+    .beats__main {
+        grid-template-rows: 30vh minmax(30vh, max-content) minmax(30vh, max-content) minmax(30vh, max-content) minmax(30vh, max-content);
+    }
+    .beatsText {
+        .beatsText__p {
+            margin-top: 20vh;
+            font-size: 1rem;
+            padding: 1rem;
+        }
+        .beatsText__title {
+            margin: 20vh 0;
+            .beatsText__title--h3 {
+                font-size: 3rem;
+            }
+        }
+    }
+
+    .spotify {
+        margin-bottom: 20vh;
+    }
+
+    .cards {
+        margin-top: 0vh;
+        .cards__h3 {
+            margin-bottom: 10vh;
+            width: 30%;
+            padding: 1rem;
+            font-size: 1.5rem;
+        }
+    }
+
+    .audioLists {
+        .audioLists__h3 {
+            margin-top: 10vh;
+            margin-bottom: 5vh;
+            width: 40%;
+            padding: 1rem;
+            font-size: 1.5rem;
         }
     }
 }

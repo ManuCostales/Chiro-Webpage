@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -52,7 +52,7 @@
     <nav class="nav navbar fixed-top navbar-expand-lg py-0 navbar-dark bg-black" id="navigation">
       <div class="container-fluid" id="navContainer">
         <a class="nav__a navbar-brand" href="index.html">
-          <img class="nav__img" src="./Imagenes/Chiro logo 1.png" alt="Chiro Logo a Home">
+          <img class="nav__img" src="./Imagenes/Chiro_logo_1.png" alt="Chiro Logo a Home">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -70,7 +70,7 @@
               </ul>
             </li>
             <li class="nav__li nav-item dropdown">
-              <a class="nav__a nav-link dropdown-toggle" href="Produccion.html" id="navbarDropdown">
+              <a class="nav__a nav-link dropdown-toggle" href="Produccion.html" id="navbarDropdown_2">
                 Produccion
               </a>
               <ul class="nav__ul dropmenu dropdown-menu dropdown-menu-center" aria-labelledby="navbarDropdown">
@@ -79,10 +79,10 @@
               </ul>
             </li>
             <li class="nav__li nav-item">
-              <a class="nav__a nav-link" href="Acerca de mi.html">Acerca de mí</a>
+              <a class="nav__a nav-link" href="Acerca_de_mi.html">Acerca de mí</a>
             </li>
             <li class="nav__li nav-item dropdown">
-              <a class="nav__a nav-link dropdown-toggle" href="Contacto.html" id="navbarDropdown">
+              <a class="nav__a nav-link dropdown-toggle" href="Contacto.html" id="navbarDropdown_3">
                 Contacto
               </a>
               <ul class="nav__ul dropmenu dropdown-menu" aria-labelledby="navbarDropdown">
@@ -98,7 +98,7 @@
     <!------------------------------------------------------Header------------------------------------------------------------>
     <div class="header container-fluid" id="header">
       <header class="header__head">
-        <img class="header__img" src="./Imagenes/Chiro logo 3 big.png" alt="Logo Chiro Grande">
+        <img class="header__img" src="./Imagenes/Chiro_logo_3_big.png" alt="Logo Chiro Grande">
       </header>
     </div>
 
@@ -124,16 +124,16 @@
         </div>
         <section class="links">
           <ul class="links__ul">
-            <li class="links__li"><a class="links__a" href="#"><img class="links__img" src="./Imagenes/logo Youtube.png" rel="nofollow" alt="Link a playlist de beats, Youtube"></a></li>
-            <li class="links__li"><a class="links__a" href="#"><img class="links__img" src="./Imagenes/Logo Bandcamp.png" rel="nofollow" alt="Link a playlist de beats, Bandcamp"></a></li>
-            <li class="links__li"><a class="links__a" href="#"><img class="links__img" src="./Imagenes/Logo Soundcloud.png" rel="nofollow" alt="Link a playlist de beats, Soundcloud"></a></li>
-            <li class="links__li"><a class="links__a" href="#"><img class="links__img" src="./Imagenes/Logo Spotify.png" rel="nofollow" alt="Link a playlist de beats, Spotify"></a></li>
+            <li class="links__li"><a class="links__a" href="#"><img class="links__img" src="./Imagenes/logo_Youtube.png" rel="nofollow" alt="Link a playlist de beats, Youtube"></a></li>
+            <li class="links__li"><a class="links__a" href="#"><img class="links__img" src="./Imagenes/Logo_Bandcamp.png" rel="nofollow" alt="Link a playlist de beats, Bandcamp"></a></li>
+            <li class="links__li"><a class="links__a" href="#"><img class="links__img" src="./Imagenes/Logo_Soundcloud.png" rel="nofollow" alt="Link a playlist de beats, Soundcloud"></a></li>
+            <li class="links__li"><a class="links__a" href="#"><img class="links__img" src="./Imagenes/Logo_Spotify.png" rel="nofollow" alt="Link a playlist de beats, Spotify"></a></li>
           </ul>
         </section>
       </section>
       <!--Section 3-->
       <section class="spotify">
-        <iframe class="spotify__iframe" src="https://open.spotify.com/embed/playlist/1E2DZ9lQcxVNfwRpUpVQ0t" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+        <iframe class="spotify__iframe" src="https://open.spotify.com/embed/playlist/1E2DZ9lQcxVNfwRpUpVQ0t" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
       </section>
       <!--Section 4-->
       <section class="cards">
@@ -202,113 +202,117 @@
         <h3 class="audioLists__h3 text-center">Demos</h3>
         <ul class="audioLists__ul list-unstyled mw-75 d-flex-sm">
           <!-----ROW 1----->
+          <li>
           <div class="row m-auto">
             <div class="col">
-            <li class="audioLists__li media my-1">
-              <div class="audioLists__head d-flex justify-content-around
-              justify-content-lg-center align-items-center">
-              <img class="audioLists__img mr-3" src="./Imagenes/electronica1golden .jpg" alt="Beat demo uno">
-              <h5 class="audioLists__h5 mt-0 mx-4 mb-1">List-based media object</h5>
+              <div class="audioLists__li media my-1">
+                <div class="audioLists__head d-flex justify-content-around
+                justify-content-lg-center align-items-center">
+                <img class="audioLists__img mr-3" src="./Imagenes/electronica1golden.jpg" alt="Beat demo uno">
+                <h5 class="audioLists__h5 mt-0 mx-4 mb-1">List-based media object</h5>
+                </div>
+                <div class="audioLists__body media-body d-flex flex-column justify-content-center align-items-center">
+                  <audio controls class="audioLists__audio my-2">
+                    <source src="Portfolio_Page/Music/03_Renegade_Hammerfall.mp3" type="audio/mpeg">
+                    <source src="Portfolio_Page/Music/03_Renegade_Hammerfall.ogg" type="audio/ogg">
+                    El buscador no soporta este formato
+                  </audio>
+                  <p class="audioLists__p text-center mx-1">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+                </div>
               </div>
-              <div class="audioLists__body media-body d-flex flex-column justify-content-center align-items-center">
-                <audio controls class="audioLists__audio my-2">
-                  <source src="Portfolio Page/Music/03 Renegade Hammerfall.mp3" type="audio/mpeg">
-                  <source src="Portfolio Page/Music/03 Renegade Hammerfall.ogg" type="audio/ogg">
-                  El buscador no soporta este formato
-                </audio>
-                <p class="audioLists__p text-center mx-1">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+            </div>
+            <div class="col">
+              <div class="audioLists__li media my-1">
+                <div class="audioLists__head d-flex justify-content-around
+                justify-content-md-center align-items-center">
+                <img class="audioLists__img mr-3" src="./Imagenes/electronica1golden.jpg" alt="Beat demo dos">
+                <h5 class="audioLists__h5 mt-0 mx-4 mb-1">List-based media object</h5>
+                </div>
+                <div class="audioLists__body media-body d-flex flex-column justify-content-center align-items-center">
+                  <audio controls class="audioLists__audio my-2">
+                    <source src="Portfolio_Page/Music/03_Renegade_Hammerfall.mp3" type="audio/mpeg">
+                    <source src="Portfolio_Page/Music/03_Renegade_Hammerfall.ogg" type="audio/ogg">
+                    El buscador no soporta este formato
+                  </audio>
+                  <p class="audioLists__p text-center mx-1">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+                </div>
               </div>
-            </li>
+            </div>
+            <div class="col">
+              <div class="audioLists__li media my-1">
+                <div class="audioLists__head d-flex justify-content-around
+                justify-content-md-center align-items-center">
+                <img class="audioLists__img mr-3" src="./Imagenes/electronica1golden.jpg" alt="Beat demo tres">
+                <h5 class="audioLists__h5 mt-0 mx-4 mb-1">List-based media object</h5>
+                </div>
+                <div class="audioLists__body media-body d-flex flex-column justify-content-center align-items-center">
+                  <audio controls class="audioLists__audio my-2">
+                    <source src="Portfolio_Page/Music/03_Renegade_Hammerfall.mp3" type="audio/mpeg">
+                    <source src="Portfolio_Page/Music/03_Renegade_Hammerfall.ogg" type="audio/ogg">
+                    El buscador no soporta este formato
+                  </audio>
+                  <p class="audioLists__p text-center mx-1">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="col">
-            <li class="audioLists__li media my-1">
-              <div class="audioLists__head d-flex justify-content-around
-              justify-content-md-center align-items-center">
-              <img class="audioLists__img mr-3" src="./Imagenes/electronica1golden .jpg" alt="Beat demo dos">
-              <h5 class="audioLists__h5 mt-0 mx-4 mb-1">List-based media object</h5>
-              </div>
-              <div class="audioLists__body media-body d-flex flex-column justify-content-center align-items-center">
-                <audio controls class="audioLists__audio my-2">
-                  <source src="Portfolio Page/Music/03 Renegade Hammerfall.mp3" type="audio/mpeg">
-                  <source src="Portfolio Page/Music/03 Renegade Hammerfall.ogg" type="audio/ogg">
-                  El buscador no soporta este formato
-                </audio>
-                <p class="audioLists__p text-center mx-1">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
-              </div>
-            </li>
-          </div>
-          <div class="col">
-            <li class="audioLists__li media my-1">
-              <div class="audioLists__head d-flex justify-content-around
-              justify-content-md-center align-items-center">
-              <img class="audioLists__img mr-3" src="./Imagenes/electronica1golden .jpg" alt="Beat demo tres">
-              <h5 class="audioLists__h5 mt-0 mx-4 mb-1">List-based media object</h5>
-              </div>
-              <div class="audioLists__body media-body d-flex flex-column justify-content-center align-items-center">
-                <audio controls class="audioLists__audio my-2">
-                  <source src="Portfolio Page/Music/03 Renegade Hammerfall.mp3" type="audio/mpeg">
-                  <source src="Portfolio Page/Music/03 Renegade Hammerfall.ogg" type="audio/ogg">
-                  El buscador no soporta este formato
-                </audio>
-                <p class="audioLists__p text-center mx-1">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
-              </div>
-            </li>
-          </div>
-          </div>
+          </li>
           <!-----ROW 2----->
+          <li>
           <div class="row m-auto">
             <div class="col">
-            <li class="audioLists__li media my-1">
-              <div class="audioLists__head d-flex justify-content-around
-              justify-content-lg-center align-items-center">
-              <img class="audioLists__img mr-3" src="./Imagenes/electronica1golden .jpg" alt="Beat demo cuatro">
-              <h5 class="audioLists__h5 mt-0 mx-4 mb-1">List-based media object</h5>
+              <div class="audioLists__li media my-1">
+                <div class="audioLists__head d-flex justify-content-around
+                justify-content-lg-center align-items-center">
+                <img class="audioLists__img mr-3" src="./Imagenes/electronica1golden.jpg" alt="Beat demo cuatro">
+                <h5 class="audioLists__h5 mt-0 mx-4 mb-1">List-based media object</h5>
+                </div>
+                <div class="audioLists__body media-body d-flex flex-column justify-content-center align-items-center">
+                  <audio controls class="audioLists__audio my-2">
+                    <source src="Portfolio_Page/Music/03_Renegade_Hammerfall.mp3" type="audio/mpeg">
+                    <source src="Portfolio_Page/Music/03_Renegade_Hammerfall.ogg" type="audio/ogg">
+                    El buscador no soporta este formato
+                  </audio>
+                  <p class="audioLists__p text-center mx-1">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+                </div>
               </div>
-              <div class="audioLists__body media-body d-flex flex-column justify-content-center align-items-center">
-                <audio controls class="audioLists__audio my-2">
-                  <source src="Portfolio Page/Music/03 Renegade Hammerfall.mp3" type="audio/mpeg">
-                  <source src="Portfolio Page/Music/03 Renegade Hammerfall.ogg" type="audio/ogg">
-                  El buscador no soporta este formato
-                </audio>
-                <p class="audioLists__p text-center mx-1">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+            </div>
+            <div class="col">
+              <div class="audioLists__li media my-1">
+                <div class="audioLists__head d-flex justify-content-around
+                justify-content-md-center align-items-center">
+                <img class="audioLists__img mr-3" src="./Imagenes/electronica1golden.jpg" alt="Beat demo cinco">
+                <h5 class="audioLists__h5 mt-0 mx-4 mb-1">List-based media object</h5>
+                </div>
+                <div class="audioLists__body media-body d-flex flex-column justify-content-center align-items-center">
+                  <audio controls class="audioLists__audio my-2">
+                    <source src="Portfolio_Page/Music/03_Renegade_Hammerfall.mp3" type="audio/mpeg">
+                    <source src="Portfolio_Page/Music/03_Renegade_Hammerfall.ogg" type="audio/ogg">
+                    El buscador no soporta este formato
+                  </audio>
+                  <p class="audioLists__p text-center mx-1">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+                </div>
               </div>
-            </li>
+            </div>
+            <div class="col">
+              <div class="audioLists__li media my-1">
+                <div class="audioLists__head d-flex justify-content-around
+                justify-content-md-center align-items-center">
+                <img class="audioLists__img mr-3" src="./Imagenes/electronica1golden.jpg" alt="Beat demo seis">
+                <h5 class="audioLists__h5 mt-0 mx-4 mb-1">List-based media object</h5>
+                </div>
+                <div class="audioLists__body media-body d-flex flex-column justify-content-center align-items-center">
+                  <audio controls class="audioLists__audio my-2">
+                    <source src="Portfolio_Page/Music/03_Renegade_Hammerfall.mp3" type="audio/mpeg">
+                    <source src="Portfolio_Page/Music/03_Renegade_Hammerfall.ogg" type="audio/ogg">
+                    El buscador no soporta este formato
+                  </audio>
+                  <p class="audioLists__p text-center mx-1">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="col">
-            <li class="audioLists__li media my-1">
-              <div class="audioLists__head d-flex justify-content-around
-              justify-content-md-center align-items-center">
-              <img class="audioLists__img mr-3" src="./Imagenes/electronica1golden .jpg" alt="Beat demo cinco">
-              <h5 class="audioLists__h5 mt-0 mx-4 mb-1">List-based media object</h5>
-              </div>
-              <div class="audioLists__body media-body d-flex flex-column justify-content-center align-items-center">
-                <audio controls class="audioLists__audio my-2">
-                  <source src="Portfolio Page/Music/03 Renegade Hammerfall.mp3" type="audio/mpeg">
-                  <source src="Portfolio Page/Music/03 Renegade Hammerfall.ogg" type="audio/ogg">
-                  El buscador no soporta este formato
-                </audio>
-                <p class="audioLists__p text-center mx-1">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
-              </div>
-            </li>
-          </div>
-          <div class="col">
-            <li class="audioLists__li media my-1">
-              <div class="audioLists__head d-flex justify-content-around
-              justify-content-md-center align-items-center">
-              <img class="audioLists__img mr-3" src="./Imagenes/electronica1golden .jpg" alt="Beat demo seis">
-              <h5 class="audioLists__h5 mt-0 mx-4 mb-1">List-based media object</h5>
-              </div>
-              <div class="audioLists__body media-body d-flex flex-column justify-content-center align-items-center">
-                <audio controls class="audioLists__audio my-2">
-                  <source src="Portfolio Page/Music/03 Renegade Hammerfall.mp3" type="audio/mpeg">
-                  <source src="Portfolio Page/Music/03 Renegade Hammerfall.ogg" type="audio/ogg">
-                  El buscador no soporta este formato
-                </audio>
-                <p class="audioLists__p text-center mx-1">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
-              </div>
-            </li>
-          </div>
-          </div>
+          </li>
         </ul> 
       </section>
     </main>
@@ -316,7 +320,7 @@
     <!------------------------------------------------------Footer------------------------------------------------------------>
 
     <footer class="footer">
-      <a class="footer__a" href="#header"><img class="footer__img" src="./Imagenes/Chiro logo 2.png" alt="Logo Chiro Footer"></a>
+      <a class="footer__a" href="#header"><img class="footer__img" src="./Imagenes/Chiro_logo_2.png" alt="Logo Chiro Footer"></a>
       <ul class="footer__ul">
           <li class="footer__li"><a class="footer__a" href="http"><img class="footerInstagram" src="https://icongr.am/fontawesome/instagram.svg?size=20&color=ffffff" rel="nofollow" alt="Link a Instagram"></a></li>
           <li class="footer__li"><a class="footer__a" href="http"><img class="footerYoutube" src="https://icongr.am/fontawesome/youtube-play.svg?size=20&color=ffffff" rel="nofollow" alt="Link a Youtube"></a></li>

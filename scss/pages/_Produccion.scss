@@ -401,3 +401,163 @@
     }
 }
 
+// ------------------------------MEDIUM HORIZONTAL------------------------------
+
+@media only screen and (max-device-width : 768px) and (orientation:landscape)  {
+    .produccion__main {    
+        grid-template-rows: 30vh 70vh minmax(30vh, max-content) minmax(30vh, max-content) minmax(30vh, max-content) minmax(30vh, max-content);
+    }
+
+    .prodCarrusel {
+        height: 60vh;
+        padding-bottom: 0;
+        width: 60vw;
+        margin: $center;
+        margin-bottom: 30vh;
+        .photoSlider h5 {
+            font-size: 6rem;
+        }
+        .photoSlider p {
+            font-size:3rem;
+        }
+    }
+
+    .prodSpotify {
+        grid-area: prodspot;
+        height: 60vh;
+        @include flexbox (flex, row nowrap, center, center);
+        .prodSpotify__iframe {
+            height: 90%;
+            width: 90%;
+        }
+    }
+    
+    .linksProd {
+        .linksProd__h2 {
+            margin-bottom: 5vh;
+            margin-top: 5vh;
+            font-size: 1rem;
+        }
+    }
+
+
+    .prodVideos {
+        grid-area: videos;
+        height: 100vh;
+        width: 90vw;
+        display: block;
+        margin: $center;
+        @include flexbox (flex, row nowrap, center, center);
+        margin-bottom: 0vh;
+        .prodVideos__div {
+            .prodVideos__inner {
+                width: 90vw;
+                height: 80vh;
+                position: relative;
+                .prodVideos__active {
+                    width: 90vw;
+                    height: 80vh;
+                    right: 5vw;
+                    .iframeYoutube {
+                        height: 60vh;
+                        width: 70vw;
+                        border: solid white 2px;
+                        right: 5vw;
+                    }
+                }
+                .iframeYoutube {
+                    height: 60vh;
+                    width: 70vw;
+                    border: solid white 2px;
+                    right: 12vw;
+                }
+            }
+        }
+    }
+}
+
+
+// ------------------------------LARGE HORIZONTAL------------------------------
+
+@media only screen and (min-device-width: 769px) and (max-device-width: 1200px) and (orientation:landscape) {
+    .produccion__main {    
+        grid-template-rows: 30vh 70vh minmax(30vh, max-content) minmax(30vh, max-content) minmax(30vh, max-content) minmax(30vh, max-content);
+    }
+
+    .prodText {
+        .prodText__text {
+            .prodText__p {
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+    .prodCarrusel {
+        height: 60vh;
+        padding-bottom: 0;
+        width: 60vw;
+        margin: $center;
+        margin-bottom: 10vh;
+        .photoSlider h5 {
+            font-size: 6rem;
+        }
+        .photoSlider p {
+            font-size:1.5rem;
+        }
+    }
+
+    .prodSpotify {
+        grid-area: prodspot;
+        height: 60vh;
+        @include flexbox (flex, row nowrap, center, center);
+        .prodSpotify__iframe {
+            height: 90%;
+            width: 90%;
+        }
+    }
+    
+    .linksProd {
+        .linksProd__h2 {
+            margin-bottom: 5vh;
+            margin-top: 5vh;
+            font-size: 1rem;
+        }
+    }
+
+
+    .prodVideos {
+        grid-area: videos;
+        height: 100vh;
+        width: 90vw;
+        display: block;
+        margin: $center;
+        @include flexbox (flex, row nowrap, center, center);
+        margin-bottom: 0vh;
+        .prodVideos__div {
+            .prodVideos__inner {
+                width: 90vw;
+                height: 80vh;
+                position: relative;
+                .prodVideos__active {
+                    width: 90vw;
+                    height: 80vh;
+                    right: 5vw;
+                    .iframeYoutube {
+                        height: 60vh;
+                        width: 70vw;
+                        border: solid white 2px;
+                        right: 5vw;
+                    }
+                }
+                .iframeYoutube {
+                    height: 60vh;
+                    width: 70vw;
+                    border: solid white 2px;
+                    right: 12vw;
+                }
+            }
+        }
+    }
+}
+
+
