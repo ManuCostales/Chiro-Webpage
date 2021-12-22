@@ -397,3 +397,82 @@
         }
     }
 }
+
+// ------------------------------MEDIUM HORIZONTAL------------------------------
+
+@media only screen and (max-device-width : 768px) and (orientation:landscape)  {
+    .contacto__main {
+        grid-template-rows: 30vh minmax(30vh, max-content) minmax(30vh, max-content) 35vh 30vh;
+    }
+    .contactoRedes {
+        margin-bottom: 25vh;
+        .contactoRedes__ul {
+            flex-flow: row nowrap;
+            .contactoRedes__li {
+                &:hover {
+                    transform: scale(1.2);
+                }
+                .contactoRedes__a {
+                    width: 100px;
+                    .contactoRedes__img {
+                        width: 40px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// ---------------------------------- MEDIUM+ HORIZONTAL-------------------------------
+
+@media only screen and (min-device-width: 812px) and (max-device-width : 1023px) and (orientation:landscape)  {
+    .contacto__main {
+        grid-template-rows: 30vh minmax(30vh, max-content) minmax(30vh, max-content) 35vh 30vh;
+    }
+    .contactoRedes {
+        margin-bottom: 25vh;
+        .contactoRedes__ul {
+            flex-flow: row nowrap;
+            .contactoRedes__li {
+                &:hover {
+                    transform: scale(1.2);
+                }
+                .contactoRedes__a {
+                    width: 100px;
+                    .contactoRedes__img {
+                        width: 40px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// ------------------------------LARGE HORIZONTAL------------------------------
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1200px) and (orientation:landscape) {
+    .contacto__main {
+        grid-template-rows: 30vh minmax(30vh, max-content) minmax(30vh, max-content) 35vh 30vh;
+    }
+    .contactoRedes {
+        margin-bottom: 25vh;
+        .contactoRedes__ul {
+            flex-flow: row nowrap;
+            .contactoRedes__li {
+                &:hover {
+                    transform: scale(1.2);
+                }
+                .contactoRedes__a {
+                    width: 100px;
+                    .contactoRedes__img {
+                        width: 40px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-device-width: 1201px) and (max-device-width: 3000px) and (orientation:landscape) {
+    
+}

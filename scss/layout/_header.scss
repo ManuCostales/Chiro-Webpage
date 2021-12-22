@@ -98,7 +98,24 @@
 
 //----------------------------------- MEDIUM HORIZONTAL---------------------------------
 
-@media only screen and (max-device-width : 1025px) and (orientation:landscape)  {
+@media only screen and (max-device-width : 768px) and (orientation:landscape)  {
+    .header {
+        background-size: 1024px 705,5px;
+        .header__head {
+            height: 100%;
+            .header__img {
+                width: 150px;
+                margin: $center;
+                margin-top: 38vh;
+                animation-name: none;
+            }
+        }
+    }
+}
+
+// ---------------------------------- MEDIUM+ HORIZONTAL-------------------------------
+
+@media only screen and (min-device-width: 812px) and (max-device-width : 1023px) and (orientation:landscape)  {
     .header {
         background-size: 1024px 705,5px;
         .header__head {
@@ -106,7 +123,7 @@
             .header__img {
                 width: 200px;
                 margin: $center;
-                margin-top: 25vh;
+                margin-top: 30vh;
                 animation-name: none;
             }
         }
@@ -121,7 +138,7 @@
         .header__head {
             height: 100%;
             .header__img {
-                width: 350px;
+                width: 400px;
                 margin: $center;
                 margin-top: 15vh;
                 animation-name: none;
