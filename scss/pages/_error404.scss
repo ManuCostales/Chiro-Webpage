@@ -3,9 +3,9 @@
 }
 
 .error__main {
-    grid-area: errormain;
-    background: linear-gradient(rgb(60, 0, 139), rgba(135,45,253,0.5), rgba(255,165,0,1));
-    overflow-x: hidden;
+  grid-area: errormain;
+  background: linear-gradient(rgb(60, 0, 139), rgba(135,45,253,0.5), rgba(255,165,0,1));
+  overflow-x: hidden;
 }
 
 .errorTitle {
@@ -19,31 +19,31 @@
     font-weight: bold;
   }
   .errorTitle__h1 {
-      margin: 0 0.2rem;
-      font-size: 2.5rem;
-      font-weight: bold;
+    margin: 0 0.2rem;
+    font-size: 2.5rem;
+    font-weight: bold;
   }
 }
 
 .errorSec {
   @include flexbox(flex, column nowrap, center, auto);
   .errorSec__img {
-      width: 150px;
-      margin: $center;
-      animation: errorAnim_img 1s ease-out 1s 1 normal forwards;
-      opacity: 0;
+    width: 150px;
+    margin: $center;
+    animation: errorAnim_img 1s ease-out 1s 1 normal forwards;
+    opacity: 0;
   }
   .errorSec__ul {
     @include flexbox(flex, column nowrap, center, center);
     @include m-p (0,0);
     margin-bottom: 5vh;
     .errorSec__li {
-        position: relative;
-        opacity: 0;
-          .errorSec__h2 {
-              font-size: 2rem;
-              font-weight: 300;
-          }
+      position: relative;
+      opacity: 0;
+      .errorSec__h2 {
+          font-size: 2rem;
+          font-weight: 300;
+      }
     }
     .errorSec__li--one {
         animation: errorAnim_1 6s ease-out 2s 1 normal forwards;

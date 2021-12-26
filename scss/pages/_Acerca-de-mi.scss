@@ -50,8 +50,7 @@
     grid-gap: 0;
     .acercaText__img--one {
         grid-area: imageone;
-        height: 160px;
-        width: 160px;
+        @include w-h (160px, 160px);
         border: rgb(255, 255, 255) solid 2px;
         border-radius:50%;
         margin: 5vh auto;
@@ -128,8 +127,7 @@
         "texttwo texttwo"
         "imagetwo imagethree";
         .acercaText__img--one {
-            height: 200px;
-            width: 200px;
+            @include w-h (200px, 200px);
             margin-bottom: 2vh;
         }
         .acercaText__img--two {
@@ -170,8 +168,7 @@
         "texttwo texttwo"
         "imagetwo imagethree";
         .acercaText__img--one {
-            height: 300px;
-            width: 300px;
+            @include w-h (300px, 300px);
             border-radius: 25px;
             margin-bottom: 2vh;
         }
@@ -217,8 +214,7 @@
         "texttwo texttwo"
         "imagetwo imagethree";
         .acercaText__img--one {
-            height: 400px;
-            width: 400px;
+            @include w-h (400px, 400px);
             border-radius: 50px;
             margin-bottom: 2vh;
             
@@ -271,8 +267,7 @@
         "texttwo texttwo"
         "imagetwo imagethree";
         .acercaText__img--one {
-            height: 700px;
-            width: 700px;
+            @include w-h (700px, 700px);
             border-radius: 50px;
             margin-bottom: 2vh;
             
