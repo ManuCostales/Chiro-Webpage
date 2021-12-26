@@ -25,6 +25,15 @@ $home: linear-gradient(0deg, orange, rgba(135,45,253,1) 100%);
     padding: $padding;
 }
 
+// Width and Height
+
+@mixin w-h($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+// Margin Center
+
 $center: 0 auto;
 
 // Margins
