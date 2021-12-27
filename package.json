@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-css": "node-sass --include-path scss scss/main.scss css/main.css",
     "watch-css": "nodemon -e scss -x \"npm     run build-css\"",
-    "build":"purgecss --css css/main.css --content index.html -o css/reducido.css"
+    "build":"purgecss --css css/main.css --content index.html Beats.html Produccion.html Acerca_de_mi.html Contacto.html Error_404.html  -o css/reducido.css"
   },
   "author": "Manuel",
   "license": "ISC",
