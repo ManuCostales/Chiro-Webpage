@@ -32,7 +32,7 @@
     .form__form {
         @include m-p(0 2vh, 2vh 0);
         text-align: center;
-        background: linear-gradient(rgb(68, 18, 206), rgba(135,45,253,1), orange);
+        background: linear-gradient($purple-blue, $purple-dark, $purple-light, orange);
         border-radius: 25px;
         border: solid white 3px;
         .form__row {
@@ -50,7 +50,7 @@
             width: 90%;
         }
         .form__btn {
-            background: rgba(135,45,253,1);
+            background: $purple;
             border: solid white 2px;
             border-radius: 25px;
             transition: all .5s linear;
@@ -201,7 +201,7 @@
         margin-bottom: 10vh;
         height: 35vh;
         .contactoRedes__ul {
-            background: linear-gradient(rgba(135,45,253,1),rgb(71, 15, 161));
+            background: linear-gradient($purple-light, $purple-dark);
             border-top: solid white 4px;
             border-bottom: solid white 4px;
             height: 35vh;
@@ -236,7 +236,7 @@
 
     .contactoRedes {
         .contactoRedes__ul {
-            background: linear-gradient(rgba(135,45,253,1),rgb(71, 15, 161));
+            background: linear-gradient($purple-light, $purple-dark);
             border-top: solid white 4px;
             border-bottom: solid white 4px;
         }
@@ -297,7 +297,7 @@
             padding: 2rem;
         }
         .contactoRedes__ul {
-            background: linear-gradient(rgba(135,45,253,1),rgb(71, 15, 161));
+            background: linear-gradient($purple-light, $purple-dark);
             border-top: solid white 3px;
             border-bottom: solid white 3px;
             @include m-p(20vh auto, 2rem);
@@ -375,7 +375,7 @@
             font-size: 4rem;
         }
         .contactoRedes__ul {
-            background: linear-gradient(rgba(135,45,253,1),rgb(71, 15, 161));
+            background: linear-gradient($purple-light, $purple-dark);
             border-top: solid white 3px;
             border-bottom: solid white 3px;
             @include m-p(20vh auto, 2rem);

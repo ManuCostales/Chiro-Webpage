@@ -36,6 +36,7 @@
         .homeMain__a {
             font-size: 1.5rem;
             font-weight: 200;
+            text-decoration: none;
         }
         .homeMain__a--one {
             @include anim(animlink1, 3s, ease-in, infinite);
