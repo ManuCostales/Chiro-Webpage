@@ -934,45 +934,6 @@
         width: 700px;
         text-align: center; } }
 
-.lang {
-  position: fixed;
-  left: 94.8%;
-  top: 87%; }
-  .lang .lang__item {
-    position: relative;
-    background-color: black;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    left: 70%;
-    text-align: center; }
-    .lang .lang__item .lang__p {
-      margin: 0 auto;
-      padding: 20%;
-      font-weight: 500; }
-
-.langES {
-  display: block; }
-
-.langEN {
-  display: none; }
-
-@media only screen and (min-width: 360px) and (max-width: 479px) {
-  .lang {
-    display: none; } }
-
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-  .lang {
-    display: none; } }
-
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .lang {
-    display: none; } }
-
-@media only screen and (min-width: 1024px) and (max-width: 3000px) {
-  .lang {
-    display: none; } }
-
 .intro {
   grid-area: intro;
   background-color: none;
