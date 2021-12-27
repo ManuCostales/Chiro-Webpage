@@ -1,3 +1,4 @@
+
 .error__body {
   background-image: url(../Imagenes/Fondo_graffitis.jpg);
 }
@@ -80,6 +81,7 @@
       padding: 0.5rem;
       .errorMenu__a {
         font-size: 1.3rem;
+        text-decoration: none;
       }
       .errorMenu__li--ul{
         text-align: center;
@@ -87,6 +89,7 @@
         .errorMenu__li--a {
           font-size:0.7rem;
           font-weight: 200;
+          text-decoration: none;
         }
       }
     }

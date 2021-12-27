@@ -11,7 +11,14 @@
 
 $lang:es;
 
-// Colors and Gradients
+// Colors
+
+$purple: rgb(100, 19, 192);
+$purple-light: rgb(140, 0, 255);
+$purple-dark: rgb(71, 15, 161);
+$purple-blue: rgb(68, 18, 206);
+
+//Gradients
 
 $title: linear-gradient(rgb(17, 17, 17), black); 
 $linksbg: linear-gradient(black, rgb(39, 39, 39), black);

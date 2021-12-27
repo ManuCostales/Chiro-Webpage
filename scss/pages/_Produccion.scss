@@ -65,10 +65,13 @@
         .photoSlider h5 {
             font-size: 1.5rem;
             text-shadow: 2px 2px 0px rgba(0, 0, 0, 1);
+            font-weight: 500;
         }
         .photoSlider p {
             font-size: 0.7rem;
             text-shadow: 2px 2px 0px rgba(0, 0, 0, 1);
+            margin-bottom: 0;
+            font-weight: 500;
         }    
     }
 }
@@ -125,6 +128,14 @@
                 margin-top: 20vh;
             }
         }
+
+        .prodCarrusel {
+            .photoSlider {
+                .photoSlider p{
+                    margin-bottom: 1rem;
+                }
+            }
+        }
     }
 
 // ------------------------------------MEDIUM-LARGE SIZE-------------------------------------
@@ -178,19 +189,21 @@
         .prodVideos {
             margin-bottom: 10vh;
             .prodVideos__div {
+                height: 65vh;
                 .prodVideos__inner {
-                    @include w-h(90vw, 52vw);
+                    @include w-h(90vw, 50vh);
                     position: relative;
                     .prodVideos__active {
                         width: 90vw;
+                        height: 40vh;
                         .iframeYoutube {
-                            @include w-h(90vw, 52vh);
+                            @include w-h(90vw, 100%);
                         }
                     }
                 }
             }
             .iframeYoutube {
-                @include w-h(90vw, 52vh);
+                @include w-h(90vw, 100%);
             }
         }
     }
@@ -226,6 +239,27 @@
                     text-shadow: 2px 2px 0px rgba(0, 0, 0, 1);
                 }
             }    
+        }
+
+        .prodVideos {
+            margin-bottom: 10vh;
+            .prodVideos__div {
+                height: 100%;
+                .prodVideos__inner {
+                    @include w-h(90vw, 50vh);
+                    position: relative;
+                    .prodVideos__active {
+                        width: 90vw;
+                        height: 40vh;
+                        .iframeYoutube {
+                            @include w-h(90vw, 100%);
+                        }
+                    }
+                }
+            }
+            .iframeYoutube {
+                @include w-h(90vw, 100%);
+            }
         }
     }
    
